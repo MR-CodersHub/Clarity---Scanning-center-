@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Imaging | Clarity Imaging Center</title>
+    <link rel="icon" href="../assets/images/heartbeat-svgrepo-com.svg">
+
+    <meta
+        name="description"
+        content="Explore advanced MRI, CT and ultrasound imaging at Clarity Imaging Center."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://images.pexels.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Global -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+  
+
+    <!-- Home 2 specific -->
+    <link rel="stylesheet" href="../assets/css/home2.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SCROLL PROGRESS + CURSOR GLOW
+========================================================= -->
+
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div class="page-loader" id="pageLoader">
+    <div class="loader-ring"></div>
+    <span>Loading Clarity</span>
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+
+            <span class="logo-mark">
+                <img src="../assets/images/heartbeat-svgrepo-com.svg">
+            </span>
+
+            <span class="logo-text">
+                <strong>CLARITY</strong>
+                <small>IMAGING CENTER</small>
+            </span>
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+
+            <a href="../index.html">Home</a>
+
+            <a href="home2.html" class="active">Home 2</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="blog.html">Blog</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+
+            <!-- Theme -->
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                type="button"
+                aria-label="Toggle theme"
+            >
+                <i data-lucide="moon"></i>
+            </button>
+
+
+            <!-- RTL -->
+            <button
+                class="icon-btn rtl-btn"
+                id="rtlToggle"
+                type="button"
+                aria-label="Switch direction"
+            >
+                <span>RTL</span>
+            </button>
+
+
+            <!-- Header CTA -->
+            <a
+                href="contact.html"
+                class="btn btn-primary header-cta"
+            >
+                Book / Enquire
+            </a>
+
+
+            <!-- Mobile menu -->
+            <button
+                class="icon-btn menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open menu"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="../index.html">Home</a>
+
+        <a href="home2.html">Home 2</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="blog.html">Blog</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="contact.html" class="mobile-appointment">
+            Book / Enquire
+            <i data-lucide="arrow-up-right"></i>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     PROFILE DROPDOWN  (works with main.js)
+========================================================= -->
+
+<div class="profile-dropdown" id="profileDropdown">
+
+    <div class="profile-dropdown-head">
+
+        <div class="profile-avatar">
+            <i data-lucide="user-round"></i>
+        </div>
+
+        <div>
+            <strong>Patient Portal</strong>
+            <span>Manage your appointments</span>
+        </div>
+
+    </div>
+
+    <button class="account-action" data-modal="loginModal">
+        <i data-lucide="log-in"></i>
+        <span>Login</span>
+    </button>
+
+    <button class="account-action" data-modal="signupModal">
+        <i data-lucide="user-plus"></i>
+        <span>Sign Up</span>
+    </button>
+
+</div>
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero-section hero-home2">
+
+    <div class="hero-glow hero-glow-one"></div>
+    <div class="hero-glow hero-glow-two"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal-left">
+
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                ADVANCED DIAGNOSTIC IMAGING
+            </div>
+
+            <h1 class="hero-title">
+
+                <span class="w"><span>See</span></span>
+
+                <span class="w"><span>Beyond</span></span>
+
+                <span class="w accent"><span>the</span></span>
+
+                <span class="w accent"><span>Surface.</span></span>
+
+            </h1>
+
+            <p class="hero-description">
+                Precision imaging, thoughtful care, and advanced
+                technology come together to give your care team
+                a clearer view of what matters.
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a href="contact.html" class="btn btn-primary">
+                    <i data-lucide="calendar-check"></i>
+                    Book an Appointment
+                </a>
+
+                <a href="services.html" class="btn btn-secondary">
+                    Explore Imaging
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="hero-trust">
+
+                <div class="trust-item">
+                    <strong>24+</strong>
+                    <span>Years of care</span>
+                </div>
+
+                <div class="trust-divider"></div>
+
+                <div class="trust-item">
+                    <strong>98%</strong>
+                    <span>Patient satisfaction</span>
+                </div>
+
+                <div class="trust-divider"></div>
+
+                <div class="trust-item">
+                    <strong>3</strong>
+                    <span>Advanced modalities</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual reveal-right">
+
+            <div class="hero-image-wrap">
+
+                <!-- Photo layer (also the fallback if the video file is missing) -->
+                <img
+                    src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1400&q=80"
+                    alt="Advanced diagnostic imaging equipment"
+                    width="1400"
+                    height="1000"
+                >
+
+
+                <!-- Video layer: put your file at assets/video/imaging-hero.mp4 -->
+                <video
+                    class="hero-video"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    aria-hidden="true"
+                >
+                    <source
+                        src="https://www.pexels.com/download/video/6998162/"
+                        type="video/mp4"
+                    >
+                </video>
+
+
+                <div class="image-overlay"></div>
+
+
+                <!-- Scanner animation -->
+
+                <div class="scan-line" aria-hidden="true"></div>
+
+                <span class="hud-corner tl" aria-hidden="true"></span>
+                <span class="hud-corner tr" aria-hidden="true"></span>
+                <span class="hud-corner bl" aria-hidden="true"></span>
+                <span class="hud-corner br" aria-hidden="true"></span>
+
+
+                <div class="hud-readout">
+
+                    <span class="hud-live" aria-hidden="true"></span>
+
+                    <span>LIVE SCAN SYSTEM</span>
+
+                    <button
+                        class="video-toggle"
+                        type="button"
+                        aria-label="Pause video"
+                    >
+
+                        <i data-lucide="pause" class="i-pause"></i>
+                        <i data-lucide="play" class="i-play"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Floating cards -->
+
+                <div class="scan-card scan-card-top floating-card">
+
+                    <i data-lucide="scan-line"></i>
+
+                    <div>
+                        <small>IMAGING MODE</small>
+                        <strong>PRECISION</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="scan-card scan-card-bottom floating-card">
+
+                    <i data-lucide="shield-check"></i>
+
+                    <div>
+                        <small>CARE STANDARD</small>
+                        <strong>PATIENT FIRST</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="experience-badge">
+
+                <strong>24</strong>
+                <span>Years<br>of trust</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MARQUEE
+========================================================= -->
+
+<div class="marquee-strip" aria-label="Imaging services">
+
+    <div class="marquee-track">
+
+        <div class="marquee-group">
+
+            <span class="marquee-item">MRI</span>
+            <span class="marquee-item">CT</span>
+            <span class="marquee-item">ULTRASOUND</span>
+            <span class="marquee-item">PRECISION CARE</span>
+            <span class="marquee-item">ADVANCED IMAGING</span>
+
+        </div>
+
+        <div class="marquee-group" aria-hidden="true">
+
+            <span class="marquee-item">MRI</span>
+            <span class="marquee-item">CT</span>
+            <span class="marquee-item">ULTRASOUND</span>
+            <span class="marquee-item">PRECISION CARE</span>
+            <span class="marquee-item">ADVANCED IMAGING</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     IMAGING EXPLORER
+========================================================= -->
+
+<section class="section explorer-section">
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                EXPLORE OUR TECHNOLOGY
+            </span>
+
+            <h2>
+                Different scans.
+                <span>One clear purpose.</span>
+            </h2>
+
+            <p>
+                Each imaging technology answers different clinical
+                questions. Explore how our modalities work and
+                what each one can help your care team understand.
+            </p>
+
+        </div>
+
+
+        <div class="explorer-tabs" role="tablist" aria-label="Choose an imaging type">
+
+            <button
+                class="explorer-tab"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-scan="mri"
+            >
+                <i data-lucide="circle-dot"></i>
+                MRI
+            </button>
+
+            <button
+                class="explorer-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-scan="ct"
+            >
+                <i data-lucide="scan"></i>
+                CT
+            </button>
+
+            <button
+                class="explorer-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-scan="ultrasound"
+            >
+                <i data-lucide="waves"></i>
+                Ultrasound
+            </button>
+
+        </div>
+
+
+        <div class="explorer-body">
+
+
+            <!-- VISUAL -->
+
+            <div class="explorer-visual" aria-hidden="true">
+
+                <!-- photo layers (one per scan type) -->
+
+                <img
+                    class="scan-photo active"
+                    data-scan-photo="mri"
+                    src="https://images.unsplash.com/photo-1666214280352-db292c05fd80?auto=format&fit=crop&w=1000&q=75"
+                    alt=""
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                >
+
+                <img
+                    class="scan-photo"
+                    data-scan-photo="ct"
+                    src="https://images.unsplash.com/photo-1576671414121-aa0c81c869e1?auto=format&fit=crop&w=1000&q=75"
+                    alt=""
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                >
+
+                <img
+                    class="scan-photo"
+                    data-scan-photo="ultrasound"
+                    src="https://images.pexels.com/photos/7088497/pexels-photo-7088497.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                    alt=""
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                >
+
+
+                <div class="explorer-tag">
+                    MRI · FIELD ACTIVE
+                </div>
+
+
+                <!-- MRI -->
+
+                <div
+                    class="scan-art active"
+                    data-scan-art="mri"
+                >
+
+                    <svg viewBox="0 0 400 400">
+
+                        <circle
+                            class="ring"
+                            cx="200"
+                            cy="200"
+                            r="135"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="2"
+                        />
+
+                        <circle
+                            class="ring r2"
+                            cx="200"
+                            cy="200"
+                            r="110"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="2"
+                            opacity=".6"
+                        />
+
+                        <circle
+                            class="ring r3"
+                            cx="200"
+                            cy="200"
+                            r="82"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="3"
+                            opacity=".7"
+                        />
+
+                        <circle
+                            cx="200"
+                            cy="200"
+                            r="52"
+                            fill="#72d8dc"
+                            opacity=".08"
+                        />
+
+                        <circle
+                            cx="200"
+                            cy="200"
+                            r="34"
+                            fill="none"
+                            stroke="#c8fcfd"
+                            stroke-width="3"
+                        />
+
+                        <circle
+                            class="mri-dash"
+                            cx="200"
+                            cy="200"
+                            r="150"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="1"
+                            stroke-dasharray="8 15"
+                        />
+
+                        <rect
+                            class="mri-sweep"
+                            x="110"
+                            y="195"
+                            width="180"
+                            height="4"
+                            rx="2"
+                            fill="#c8fcfd"
+                        />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- CT -->
+
+                <div
+                    class="scan-art"
+                    data-scan-art="ct"
+                >
+
+                    <svg viewBox="0 0 400 400">
+
+                        <circle
+                            cx="200"
+                            cy="200"
+                            r="125"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="16"
+                            opacity=".15"
+                        />
+
+                        <circle
+                            class="ct-rotor"
+                            cx="200"
+                            cy="200"
+                            r="108"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="4"
+                            stroke-dasharray="22 12"
+                        />
+
+                        <ellipse
+                            class="ct-slice"
+                            cx="200"
+                            cy="200"
+                            rx="80"
+                            ry="32"
+                            fill="none"
+                            stroke="#c8fcfd"
+                            stroke-width="3"
+                        />
+
+                        <ellipse
+                            cx="200"
+                            cy="200"
+                            rx="55"
+                            ry="20"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="2"
+                        />
+
+                        <circle
+                            cx="200"
+                            cy="200"
+                            r="8"
+                            fill="#c8fcfd"
+                        />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- ULTRASOUND -->
+
+                <div
+                    class="scan-art"
+                    data-scan-art="ultrasound"
+                >
+
+                    <svg viewBox="0 0 400 400">
+
+                        <path
+                            d="M200 55 L95 310 Q200 360 305 310 Z"
+                            fill="#72d8dc"
+                            opacity=".06"
+                            stroke="#72d8dc"
+                            stroke-width="2"
+                        />
+
+                        <path
+                            class="us-wave"
+                            d="M145 130 Q200 180 255 130"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="3"
+                        />
+
+                        <path
+                            class="us-wave w2"
+                            d="M125 180 Q200 235 275 180"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="3"
+                        />
+
+                        <path
+                            class="us-wave w3"
+                            d="M110 230 Q200 290 290 230"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="3"
+                        />
+
+                        <path
+                            class="us-wave w4"
+                            d="M105 280 Q200 330 295 280"
+                            fill="none"
+                            stroke="#72d8dc"
+                            stroke-width="3"
+                        />
+
+                        <circle
+                            class="us-target"
+                            cx="200"
+                            cy="225"
+                            r="28"
+                            fill="none"
+                            stroke="#c8fcfd"
+                            stroke-width="3"
+                        />
+
+                    </svg>
+
+                </div>
+
+            </div>
+
+
+            <!-- PANELS -->
+
+            <div class="explorer-panels">
+
+
+                <article
+                    class="explorer-panel"
+                    data-scan-panel="mri"
+                    role="tabpanel"
+                >
+
+                    <span class="eyebrow">01 / MAGNETIC RESONANCE</span>
+
+                    <h3>Detailed views without radiation.</h3>
+
+                    <p>
+                        MRI uses powerful magnetic fields and radio
+                        waves to create highly detailed images of
+                        soft tissues, organs, joints and the nervous
+                        system.
+                    </p>
+
+                    <div class="fact-grid">
+
+                        <div class="fact">
+                            <i data-lucide="scan"></i>
+                            <dl>
+                                <dt>Best for</dt>
+                                <dd>Brain, spine, joints &amp; soft tissue</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="clock-3"></i>
+                            <dl>
+                                <dt>Typical time</dt>
+                                <dd>30–60 minutes</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="radiation"></i>
+                            <dl>
+                                <dt>Radiation</dt>
+                                <dd>No ionizing radiation</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="headphones"></i>
+                            <dl>
+                                <dt>Comfort</dt>
+                                <dd>Noise protection provided</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="service-details.html?service=mri"
+                        class="service-link"
+                    >
+                        Explore MRI
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </article>
+
+
+                <article
+                    class="explorer-panel"
+                    data-scan-panel="ct"
+                    role="tabpanel"
+                    hidden
+                >
+
+                    <span class="eyebrow">02 / COMPUTED TOMOGRAPHY</span>
+
+                    <h3>Fast imaging when clarity matters.</h3>
+
+                    <p>
+                        CT combines multiple X-ray images with
+                        computer processing to create detailed
+                        cross-sectional views of the body.
+                    </p>
+
+                    <div class="fact-grid">
+
+                        <div class="fact">
+                            <i data-lucide="scan"></i>
+                            <dl>
+                                <dt>Best for</dt>
+                                <dd>Chest, abdomen, bones &amp; trauma</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="clock-3"></i>
+                            <dl>
+                                <dt>Typical time</dt>
+                                <dd>10–20 minutes</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="zap"></i>
+                            <dl>
+                                <dt>Strength</dt>
+                                <dd>Fast cross-sectional imaging</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="shield-check"></i>
+                            <dl>
+                                <dt>Support</dt>
+                                <dd>Technologist-guided procedure</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="service-details.html?service=ct"
+                        class="service-link"
+                    >
+                        Explore CT
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </article>
+
+
+                <article
+                    class="explorer-panel"
+                    data-scan-panel="ultrasound"
+                    role="tabpanel"
+                    hidden
+                >
+
+                    <span class="eyebrow">03 / ULTRASOUND</span>
+
+                    <h3>Real-time imaging, thoughtfully delivered.</h3>
+
+                    <p>
+                        Ultrasound uses sound waves to create
+                        real-time images and is widely used for
+                        abdominal, vascular, thyroid and pregnancy
+                        imaging.
+                    </p>
+
+                    <div class="fact-grid">
+
+                        <div class="fact">
+                            <i data-lucide="waves"></i>
+                            <dl>
+                                <dt>Best for</dt>
+                                <dd>Organs, vessels &amp; soft tissue</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="clock-3"></i>
+                            <dl>
+                                <dt>Typical time</dt>
+                                <dd>20–45 minutes</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="radiation"></i>
+                            <dl>
+                                <dt>Radiation</dt>
+                                <dd>No ionizing radiation</dd>
+                            </dl>
+                        </div>
+
+                        <div class="fact">
+                            <i data-lucide="activity"></i>
+                            <dl>
+                                <dt>Imaging</dt>
+                                <dd>Real-time examination</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="service-details.html?service=ultrasound"
+                        class="service-link"
+                    >
+                        Explore Ultrasound
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GALLERY  (NEW)
+========================================================= -->
+
+<section class="section gallery-section" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                INSIDE CLARITY
+            </span>
+
+            <h2>
+                A calm space,
+                <span>built around care.</span>
+            </h2>
+
+            <p>
+                Take a look at the rooms, technology and people you
+                will meet during your visit. Tap any photo to enlarge it.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <figure
+                class="gallery-item g1 reveal"
+                tabindex="0"
+                role="button"
+                aria-label="Enlarge photo: Positioning for a CT scan"
+                data-full="https://images.unsplash.com/photo-1576671414121-aa0c81c869e1?auto=format&fit=crop&w=1800&q=85"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1576671414121-aa0c81c869e1?auto=format&fit=crop&w=1000&q=80"
+                    alt="Patient positioned inside a CT scanner"
+                    loading="lazy"
+                    width="1000"
+                    height="800"
+                >
+                <figcaption><span>Positioning for a CT scan</span><i data-lucide="maximize-2"></i></figcaption>
+            </figure>
+
+
+            <figure
+                class="gallery-item g2 reveal"
+                tabindex="0"
+                role="button"
+                aria-label="Enlarge photo: Technologists guiding every scan"
+                data-full="https://images.unsplash.com/photo-1666214275099-0ca566aefe26?auto=format&fit=crop&w=1800&q=85"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1666214275099-0ca566aefe26?auto=format&fit=crop&w=700&q=80"
+                    alt="Technologists working at the scanner control room computer"
+                    loading="lazy"
+                    width="700"
+                    height="700"
+                >
+                <figcaption><span>Technologists guiding every scan</span><i data-lucide="maximize-2"></i></figcaption>
+            </figure>
+
+
+            <figure
+                class="gallery-item g3 reveal"
+                tabindex="0"
+                role="button"
+                aria-label="Enlarge photo: Time to talk before you scan"
+                data-full="https://images.unsplash.com/photo-1666214277767-b8c2a7b4c064?auto=format&fit=crop&w=1800&q=85"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1666214277767-b8c2a7b4c064?auto=format&fit=crop&w=700&q=80"
+                    alt="Doctor checking in with a patient before a scan"
+                    loading="lazy"
+                    width="700"
+                    height="700"
+                >
+                <figcaption><span>Time to talk before you scan</span><i data-lucide="maximize-2"></i></figcaption>
+            </figure>
+
+
+            <figure
+                class="gallery-item g4 reveal"
+                tabindex="0"
+                role="button"
+                aria-label="Enlarge photo: Comfortable ultrasound rooms"
+                data-full="https://images.pexels.com/photos/7088497/pexels-photo-7088497.jpeg?auto=compress&cs=tinysrgb&w=1800"
+            >
+                <img
+                    src="https://images.pexels.com/photos/7088497/pexels-photo-7088497.jpeg?auto=compress&cs=tinysrgb&w=700"
+                    alt="Female doctor using an ultrasound machine in a clinic"
+                    loading="lazy"
+                    width="700"
+                    height="700"
+                >
+                <figcaption><span>Comfortable ultrasound rooms</span><i data-lucide="maximize-2"></i></figcaption>
+            </figure>
+
+
+            <figure
+                class="gallery-item g6 reveal"
+                tabindex="0"
+                role="button"
+                aria-label="Enlarge photo: Specialists reviewing your images"
+                data-full="https://images.pexels.com/photos/7089394/pexels-photo-7089394.jpeg?auto=compress&cs=tinysrgb&w=1800"
+            >
+                <img
+                    src="https://images.pexels.com/photos/7089394/pexels-photo-7089394.jpeg?auto=compress&cs=tinysrgb&w=700"
+                    alt="Female doctor reviewing ultrasound images in a clinic"
+                    loading="lazy"
+                    width="700"
+                    height="700"
+                >
+                <figcaption><span>Specialists reviewing your images</span><i data-lucide="maximize-2"></i></figcaption>
+            </figure>
+
+
+            <figure
+                class="gallery-item g5 reveal"
+                tabindex="0"
+                role="button"
+                aria-label="Enlarge photo: A calm, modern facility"
+                data-full="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1800&q=85"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=80"
+                    alt="Modern healthcare facility"
+                    loading="lazy"
+                    width="1000"
+                    height="500"
+                >
+                <figcaption><span>A calm, modern facility</span><i data-lucide="maximize-2"></i></figcaption>
+            </figure>
+
+
+            <figure
+                class="gallery-item g7 reveal"
+                tabindex="0"
+                role="button"
+                aria-label="Enlarge photo: Support through every procedure"
+                data-full="https://images.unsplash.com/photo-1758206523747-69af03fb56e4?auto=format&fit=crop&w=1800&q=85"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1758206523747-69af03fb56e4?auto=format&fit=crop&w=1000&q=80"
+                    alt="Medical professional assisting a patient during a CT scan"
+                    loading="lazy"
+                    width="1000"
+                    height="500"
+                >
+                <figcaption><span>Support through every procedure</span><i data-lucide="maximize-2"></i></figcaption>
+            </figure>
+
+        </div>
+
+        <p class="gallery-credit">Photos from Unsplash and Pexels (free to use).</p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PREPARATION
+========================================================= -->
+
+<section class="section prep-section">
+
+    <div class="container">
+
+        <div class="prep-grid">
+
+            <div class="prep-intro reveal-left">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        BEFORE YOUR VISIT
+                    </span>
+
+                    <h2>
+                        A little preparation
+                        <span>goes a long way.</span>
+                    </h2>
+
+                    <p>
+                        Use this quick checklist to prepare for
+                        your appointment. Your exact preparation
+                        may vary depending on the scan prescribed.
+                    </p>
+
+                </div>
+
+                <a href="prepare-scan.html" class="text-link">
+                    View complete preparation guide
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <figure class="prep-photo">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1666214276389-393fb7dbc75c?auto=format&fit=crop&w=1000&q=80"
+                        alt="Doctor examining a patient before an imaging appointment"
+                        loading="lazy"
+                        width="1000"
+                        height="750"
+                    >
+
+                    <figcaption>
+                        <i data-lucide="message-circle"></i>
+                        Questions? Our team explains every step.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+
+            <div class="prep-card reveal-right">
+
+                <div class="prep-ring">
+
+                    <svg viewBox="0 0 120 120" aria-hidden="true">
+
+                        <circle
+                            class="track"
+                            cx="60"
+                            cy="60"
+                            r="52"
+                        ></circle>
+
+                        <circle
+                            class="bar"
+                            cx="60"
+                            cy="60"
+                            r="52"
+                        ></circle>
+
+                    </svg>
+
+                    <div class="prep-count" aria-live="polite">
+                        <strong>0%</strong>
+                        <span>ready</span>
+                    </div>
+
+                </div>
+
+
+                <div class="prep-list">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        <span class="prep-box"></span>
+
+                        <span class="prep-text">
+                            Confirm your appointment time
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        <span class="prep-box"></span>
+
+                        <span class="prep-text">
+                            Bring your referral and previous reports
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        <span class="prep-box"></span>
+
+                        <span class="prep-text">
+                            Carry your identification and insurance details
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        <span class="prep-box"></span>
+
+                        <span class="prep-text">
+                            Follow any fasting instructions provided
+                        </span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        <span class="prep-box"></span>
+
+                        <span class="prep-text">
+                            Tell the team about implants or medical devices
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="prep-done">
+
+                    <i data-lucide="circle-check"></i>
+
+                    <span>
+                        You're ready. We'll see you at Clarity.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INSIGHTS
+========================================================= -->
+
+<section class="section insights-section">
+
+    <div class="container">
+
+        <div class="insights-head">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    PATIENT INSIGHTS
+                </span>
+
+                <h2>
+                    Know more.
+                    <span>Feel prepared.</span>
+                </h2>
+
+            </div>
+
+            <a href="blog.html" class="text-link">
+                View all insights
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="insights-grid">
+
+
+            <article class="insight-card reveal">
+
+                <div class="insight-art">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?auto=format&fit=crop&w=800&q=75"
+                        alt="Patient lying on a scanner table"
+                        loading="lazy"
+                        width="800"
+                        height="380"
+                    >
+
+                </div>
+
+                <div class="insight-body">
+
+                    <div class="insight-meta">
+                        <b>MRI</b>
+                        5 MIN READ
+                    </div>
+
+                    <h3>
+                        What actually happens during an MRI scan?
+                    </h3>
+
+                    <p>
+                        A simple walkthrough of the room, machine,
+                        sounds and what you can expect.
+                    </p>
+
+                    <a
+                        href="blog-details.html?post=mri"
+                        class="service-link"
+                    >
+                        Read article
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="insight-card reveal">
+
+                <div class="insight-art">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1693417920099-d985b3e0fa44?auto=format&fit=crop&w=800&q=75"
+                        alt="Imaging scanner in a quiet scan room"
+                        loading="lazy"
+                        width="800"
+                        height="380"
+                    >
+
+                </div>
+
+                <div class="insight-body">
+
+                    <div class="insight-meta">
+                        <b>PREPARATION</b>
+                        4 MIN READ
+                    </div>
+
+                    <h3>
+                        How to prepare for your diagnostic scan.
+                    </h3>
+
+                    <p>
+                        From clothing to fasting instructions,
+                        understand what you may need before arrival.
+                    </p>
+
+                    <a
+                        href="blog-details.html?post=preparation"
+                        class="service-link"
+                    >
+                        Read article
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="insight-card reveal">
+
+                <div class="insight-art">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1666214282459-c7dff167ecc0?auto=format&fit=crop&w=800&q=75"
+                        alt="Modern diagnostic imaging machine"
+                        loading="lazy"
+                        width="800"
+                        height="380"
+                    >
+
+                </div>
+
+                <div class="insight-body">
+
+                    <div class="insight-meta">
+                        <b>WELLNESS</b>
+                        6 MIN READ
+                    </div>
+
+                    <h3>
+                        Why regular imaging can support better care.
+                    </h3>
+
+                    <p>
+                        Learn how diagnostic imaging can help doctors
+                        understand changes and make informed decisions.
+                    </p>
+
+                    <a
+                        href="blog-details.html?post=imaging"
+                        class="service-link"
+                    >
+                        Read article
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="section cta-section">
+
+    <div class="container">
+
+        <div class="cta-box reveal">
+
+            <img
+                class="cta-bg"
+                src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1600&q=70"
+                alt=""
+                loading="lazy"
+                aria-hidden="true"
+                width="1600"
+                height="700"
+            >
+
+            <div class="cta-icon">
+                <i data-lucide="heart-pulse"></i>
+            </div>
+
+            <div class="cta-content">
+
+                <span class="eyebrow light-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    YOUR NEXT STEP
+                </span>
+
+                <h2>
+                    Clear answers start
+                    with clear imaging.
+                </h2>
+
+                <p>
+                    Speak with our team about your imaging
+                    requirements and appointment options.
+                </p>
+
+            </div>
+
+            <a href="contact.html" class="btn btn-light">
+                Book an Appointment
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+
+            <svg
+                class="cta-ecg"
+                viewBox="0 0 1500 90"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+            >
+
+                <path
+                    d="M0 50 H180
+                       L210 50
+                       L225 25
+                       L240 72
+                       L255 50
+                       H470
+                       L500 50
+                       L515 35
+                       L530 65
+                       L545 50
+                       H780
+                       L810 50
+                       L830 20
+                       L850 76
+                       L870 50
+                       H1080
+                       L1110 50
+                       L1125 32
+                       L1140 68
+                       L1155 50
+                       H1500"
+                />
+
+            </svg>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VISIT
+========================================================= -->
+
+<section class="section visit-section">
+
+    <div class="container">
+
+        <div class="visit-grid">
+
+
+            <div class="visit-card reveal-left">
+
+                <span class="open-badge" data-open-status role="status">
+                    CHECKING HOURS
+                </span>
+
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        VISIT CLARITY
+                    </span>
+
+                    <h2>
+                        Imaging care,
+                        <span>close to you.</span>
+                    </h2>
+
+                    <p>
+                        Our center is designed around a calm,
+                        accessible patient experience from arrival
+                        through imaging.
+                    </p>
+
+                </div>
+
+
+                <ul class="hours-list">
+
+                    <li data-day="1">
+                        <span>Monday</span>
+                        <span>08:00 AM — 08:00 PM</span>
+                    </li>
+
+                    <li data-day="2">
+                        <span>Tuesday</span>
+                        <span>08:00 AM — 08:00 PM</span>
+                    </li>
+
+                    <li data-day="3">
+                        <span>Wednesday</span>
+                        <span>08:00 AM — 08:00 PM</span>
+                    </li>
+
+                    <li data-day="4">
+                        <span>Thursday</span>
+                        <span>08:00 AM — 08:00 PM</span>
+                    </li>
+
+                    <li data-day="5">
+                        <span>Friday</span>
+                        <span>08:00 AM — 08:00 PM</span>
+                    </li>
+
+                    <li data-day="6">
+                        <span>Saturday</span>
+                        <span>09:00 AM — 04:00 PM</span>
+                    </li>
+
+                    <li data-day="0">
+                        <span>Sunday</span>
+                        <span>Closed</span>
+                    </li>
+
+                </ul>
+
+
+                <div class="visit-actions">
+
+                    <a href="contact.html" class="btn btn-primary">
+                        <i data-lucide="calendar"></i>
+                        Book Visit
+                    </a>
+
+                    <a href="tel:+914445678900" class="btn btn-secondary">
+                        <i data-lucide="phone"></i>
+                        Call Center
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--
+                REAL MAP (Google Maps embed, no API key needed).
+                To pin the exact spot: open Google Maps → your location → Share → Embed a map → copy the src into the iframe below.
+            -->
+            <div class="visit-map reveal-right">
+
+                <iframe
+                    title="Map showing Clarity Imaging Center in Chennai"
+                    src="https://www.google.com/maps?q=24+Health+Avenue,+Chennai,+Tamil+Nadu&z=15&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                ></iframe>
+
+
+                <a
+                    class="map-label"
+                    href="https://www.google.com/maps/search/?api=1&query=24+Health+Avenue+Chennai+Tamil+Nadu"
+                    target="_blank"
+                    rel="noopener"
+                >
+
+                    <i data-lucide="building-2"></i>
+
+                    <div>
+
+                        <strong>Clarity Imaging Center</strong>
+
+                        <span>
+                            24 Health Avenue, Chennai · Get directions
+                        </span>
+
+                    </div>
+
+                    <i data-lucide="arrow-up-right" class="go"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="logo footer-logo">
+
+                    <span class="logo-mark">
+                         <img
+                    src="../assets/images/heartbeat-svgrepo-com.svg"
+                    alt="Clarity Imaging Center"
+                >
+                    </span>
+
+                    <span class="logo-text">
+                        <strong>CLARITY</strong>
+                        <small>IMAGING CENTER</small>
+                    </span>
+
+                </a>
+
+                <p>
+                    Advanced diagnostic imaging delivered with
+                    precision, compassion and a patient-first approach.
+                </p>
+
+
+              <div class="social-links">
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                       <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                       <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick links -->
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Health Insights</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="footer-column">
+
+                <h3>Imaging</h3>
+
+                <a href="mri.html">MRI Imaging</a>
+                <a href="ct-scan.html">CT Scan</a>
+                <a href="ultrasound.html">Ultrasound</a>
+                <a href="prepare-scan.html">Scan Preparation</a>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column footer-contact">
+
+                <h3>Contact</h3>
+
+                <a href="#">
+
+                    <i data-lucide="map-pin"></i>
+
+                    <span>
+                        24 Health Avenue,<br>
+                        Chennai, Tamil Nadu
+                    </span>
+
+                </a>
+
+                <a href="tel:+914445678900">
+
+                    <i data-lucide="phone"></i>
+
+                    <span>+91 44 4567 8900</span>
+
+                </a>
+
+                <a href="mailto:hello@clarityimaging.in">
+
+                    <i data-lucide="mail"></i>
+
+                    <span>hello@clarityimaging.in</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Clarity Imaging Center. All rights reserved.
+            </p>
+
+            <div>
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Service</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     FLOATING ACTIONS
+========================================================= -->
+
+<div class="fab-stack">
+
+    <button
+        class="fab fab-top"
+        type="button"
+        aria-label="Back to top"
+    >
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <a
+        href="tel:+914445678900"
+        class="fab fab-call"
+        aria-label="Call Clarity"
+    >
+        <i data-lucide="phone"></i>
+    </a>
+
+</div>
+
+
+<!-- =========================================================
+     LIGHTBOX
+========================================================= -->
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+
+    <button class="lightbox-close" type="button" aria-label="Close photo">
+        <i data-lucide="x"></i>
+    </button>
+
+    <figure>
+        <img src="" alt="">
+        <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+
+</div>
+
+
+<!-- =========================================================
+     LOGIN MODAL
+========================================================= -->
+
+<div class="modal-overlay" id="loginModal">
+
+    <div class="auth-modal">
+
+        <button class="modal-close" type="button">
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+
+        <div class="auth-icon">
+            <i data-lucide="lock-keyhole"></i>
+        </div>
+
+        <span class="auth-label">Patient Portal</span>
+
+        <h2>Welcome back</h2>
+
+        <p>
+            Login to manage your appointments and patient information.
+        </p>
+
+
+        <form class="auth-form">
+
+            <label>
+                Email Address
+
+                <input
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </label>
+
+
+            <label>
+                Password
+
+                <input
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </label>
+
+
+            <button type="submit" class="btn btn-primary full-btn">
+
+                Login
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+        </form>
+
+
+        <p class="auth-switch">
+            Don't have an account?
+            <button type="button" data-modal="signupModal">
+                Create one
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     SIGN UP MODAL
+========================================================= -->
+
+<div class="modal-overlay" id="signupModal">
+
+    <div class="auth-modal">
+
+        <button class="modal-close" type="button">
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+
+        <div class="auth-icon">
+            <i data-lucide="user-plus"></i>
+        </div>
+
+        <span class="auth-label">Patient Portal</span>
+
+        <h2>Create your account</h2>
+
+        <p>
+            Create a patient account for easier appointment management.
+        </p>
+
+
+        <form class="auth-form">
+
+            <label>
+                Full Name
+
+                <input
+                    type="text"
+                    placeholder="Your full name"
+                    required
+                >
+            </label>
+
+
+            <label>
+                Email Address
+
+                <input
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </label>
+
+
+            <label>
+                Password
+
+                <input
+                    type="password"
+                    placeholder="Create a password"
+                    required
+                >
+            </label>
+
+
+            <button type="submit" class="btn btn-primary full-btn">
+
+                Create Account
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+        </form>
+
+
+        <p class="auth-switch">
+            Already have an account?
+
+            <button type="button" data-modal="loginModal">
+                Login
+            </button>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/home2.js"></script>
+
+</body>
+</html>

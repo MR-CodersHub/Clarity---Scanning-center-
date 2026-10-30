@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Health Insights | Clarity Imaging Center</title>
+
+    <link
+        rel="icon"
+        href="../assets/images/heartbeat-svgrepo-com.svg"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Global CSS -->
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css"
+    >
+
+    <!-- Blog CSS -->
+    <link
+        rel="stylesheet"
+        href="../assets/css/blog.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SCROLL PROGRESS
+    ====================================================== -->
+
+    <div
+        class="scroll-progress"
+        id="scrollProgress"
+    ></div>
+
+
+    <!-- =====================================================
+         CURSOR GLOW
+    ====================================================== -->
+
+    <div class="cursor-glow"></div>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+
+        <div class="loader-ring"></div>
+
+        <span>Loading Clarity</span>
+
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <div class="container header-inner">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+
+                <span class="logo-mark">
+
+                    <img
+                        src="../assets/images/heartbeat-svgrepo-com.svg"
+                        alt="Clarity Imaging Center"
+                    >
+
+                </span>
+
+                <span class="logo-text">
+
+                    <strong>CLARITY</strong>
+
+                    <small>IMAGING CENTER</small>
+
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-nav">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="home2.html">
+                    Home 2
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a
+                    href="blog.html"
+                    class="active"
+                >
+                    Blog
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="header-actions">
+
+                <button
+                    class="icon-btn"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Toggle dark mode"
+                >
+
+                    <i data-lucide="moon"></i>
+
+                </button>
+
+
+                <button
+                    class="icon-btn rtl-btn"
+                    id="rtlToggle"
+                    type="button"
+                    aria-label="Toggle RTL"
+                >
+
+                    <span>RTL</span>
+
+                </button>
+
+
+                <!-- Header CTA -->
+                <a
+                    href="contact.html"
+                    class="btn btn-primary header-cta"
+                >
+                    Book / Enquire
+                </a>
+
+
+                <button
+                    class="icon-btn menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open menu"
+                >
+
+                    <i data-lucide="menu"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <div
+            class="mobile-nav"
+            id="mobileNav"
+        >
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="home2.html">
+                Home 2
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a
+                href="blog.html"
+                class="active"
+            >
+                Blog
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a
+                href="contact.html"
+                class="mobile-appointment"
+            >
+                Book / Enquire
+
+                <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         PROFILE DROPDOWN
+    ====================================================== -->
+
+    <div
+        class="profile-dropdown"
+        id="profileDropdown"
+    >
+
+        <div class="profile-dropdown-head">
+
+            <div class="profile-avatar">
+
+                <i data-lucide="user-round"></i>
+
+            </div>
+
+            <div>
+
+                <strong>Patient Portal</strong>
+
+                <span>
+                    Manage your appointments
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="account-action"
+            data-modal="loginModal"
+            type="button"
+        >
+
+            <i data-lucide="log-in"></i>
+
+            <span>Login</span>
+
+        </button>
+
+
+        <button
+            class="account-action"
+            data-modal="signupModal"
+            type="button"
+        >
+
+            <i data-lucide="user-plus"></i>
+
+            <span>Sign Up</span>
+
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section class="blog-hero">
+
+            <div class="blog-hero-grid">
+
+                <div class="blog-hero-content reveal-left">
+
+                    <span class="section-kicker">
+
+                        <i data-lucide="book-open"></i>
+
+                        CLARITY HEALTH INSIGHTS
+
+                    </span>
+
+
+                    <h1>
+
+                        Understand Your
+                        <span>Imaging.</span>
+                        Understand Your Health.
+
+                    </h1>
+
+
+                    <p>
+
+                        Practical guides, preparation tips and
+                        expert-backed insights to help you feel
+                        more informed and confident before,
+                        during and after diagnostic imaging.
+
+                    </p>
+
+
+                    <div class="blog-hero-actions">
+
+                        <a
+                            href="#articles"
+                            class="btn btn-primary"
+                        >
+
+                            Explore Insights
+
+                            <i data-lucide="arrow-down"></i>
+
+                        </a>
+
+                        <a
+                            href="contact.html"
+                            class="btn btn-secondary"
+                        >
+
+                            Talk to Our Team
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="blog-hero-visual reveal-right">
+
+                    <div class="hero-orbit orbit-one"></div>
+
+                    <div class="hero-orbit orbit-two"></div>
+
+
+                    <div class="hero-feature-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85"
+                            alt="Medical professional reviewing diagnostic imaging"
+                        >
+
+                        <div class="hero-image-label">
+
+                            <span class="live-dot"></span>
+
+                            PATIENT EDUCATION
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-float-card">
+
+                        <div class="float-icon">
+
+                            <i data-lucide="scan-line"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>6</strong>
+
+                            <span>
+                                New insights
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ARTICLE INTRO
+        ================================================== -->
+
+        <section
+            class="articles-section"
+            id="articles"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+
+                        <span class="section-kicker">
+
+                            <i data-lucide="sparkles"></i>
+
+                            LATEST ARTICLES
+
+                        </span>
+
+                        <h2>
+                            Imaging knowledge,
+                            made simple.
+                        </h2>
+
+                    </div>
+
+                    <p>
+
+                        Explore clear and practical articles
+                        designed to make medical imaging easier
+                        to understand.
+
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     BLOG GRID
+                ================================================== -->
+
+                <div class="blog-grid">
+
+
+                    <!-- ARTICLE 1 -->
+
+                    <article
+                        class="blog-card  reveal"
+                        data-article="mri"
+                    >
+
+                        <div class="blog-image-wrap">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=85"
+                                alt="MRI diagnostic imaging equipment"
+                            >
+
+                            <span class="blog-category">
+                                MRI GUIDE
+                            </span>
+
+                            <span class="image-number">
+                                01
+                            </span>
+
+                        </div>
+
+
+                        <div class="blog-card-content">
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i data-lucide="calendar"></i>
+                                    06 Oct 2026
+                                </span>
+
+                                <span>
+                                    <i data-lucide="clock-3"></i>
+                                    6 min read
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                MRI Explained:
+                                What Happens Inside the Scanner?
+                            </h3>
+
+
+                            <p>
+
+                                A simple guide to MRI, the sounds
+                                you may hear, what the scanner
+                                actually captures and how to prepare.
+
+                            </p>
+
+
+                            <button
+                                class="read-article"
+                                data-article="mri"
+                                type="button"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-up-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="wave-border"></div>
+
+                    </article>
+
+
+                    <!-- ARTICLE 2 -->
+
+                    <article
+                        class="blog-card reveal"
+                        data-article="ct"
+                    >
+
+                        <div class="blog-image-wrap">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=85"
+                                alt="CT scan medical imaging"
+                            >
+
+                            <span class="blog-category">
+                                CT SCAN
+                            </span>
+
+                            <span class="image-number">
+                                02
+                            </span>
+
+                        </div>
+
+
+                        <div class="blog-card-content">
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i data-lucide="calendar"></i>
+                                    03 Oct 2026
+                                </span>
+
+                                <span>
+                                    <i data-lucide="clock-3"></i>
+                                    5 min read
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                CT Scan vs X-Ray:
+                                Why Are They Different?
+                            </h3>
+
+
+                            <p>
+
+                                Learn how CT creates detailed
+                                cross-sectional images and when
+                                doctors may choose it over a standard X-ray.
+
+                            </p>
+
+
+                            <button
+                                class="read-article"
+                                data-article="ct"
+                                type="button"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-up-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="wave-border"></div>
+
+                    </article>
+
+
+                    <!-- ARTICLE 3 -->
+
+                    <article
+                        class="blog-card reveal"
+                        data-article="ultrasound"
+                    >
+
+                        <div class="blog-image-wrap">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=85"
+                                alt="Ultrasound examination"
+                            >
+
+                            <span class="blog-category">
+                                ULTRASOUND
+                            </span>
+
+                            <span class="image-number">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <div class="blog-card-content">
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i data-lucide="calendar"></i>
+                                    30 Sep 2026
+                                </span>
+
+                                <span>
+                                    <i data-lucide="clock-3"></i>
+                                    4 min read
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Ultrasound:
+                                More Than Just Pregnancy Imaging
+                            </h3>
+
+
+                            <p>
+
+                                Discover how ultrasound can help
+                                examine organs, blood flow,
+                                soft tissues and more.
+
+                            </p>
+
+
+                            <button
+                                class="read-article"
+                                data-article="ultrasound"
+                                type="button"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-up-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="wave-border"></div>
+
+                    </article>
+
+
+                    <!-- ARTICLE 4 -->
+
+                    <article
+                        class="blog-card reveal"
+                        data-article="preparation"
+                    >
+
+                        <div class="blog-image-wrap">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1000&q=85"
+                                alt="Patient preparing for medical examination"
+                            >
+
+                            <span class="blog-category">
+                                PREPARATION
+                            </span>
+
+                            <span class="image-number">
+                                04
+                            </span>
+
+                        </div>
+
+
+                        <div class="blog-card-content">
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i data-lucide="calendar"></i>
+                                    26 Sep 2026
+                                </span>
+
+                                <span>
+                                    <i data-lucide="clock-3"></i>
+                                    7 min read
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Before Your Scan:
+                                A Practical Preparation Checklist
+                            </h3>
+
+
+                            <p>
+
+                                From clothing and paperwork to
+                                fasting instructions, understand
+                                what you should check before arriving.
+
+                            </p>
+
+
+                            <button
+                                class="read-article"
+                                data-article="preparation"
+                                type="button"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-up-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="wave-border"></div>
+
+                    </article>
+
+
+                    <!-- ARTICLE 5 -->
+
+                    <article
+                        class="blog-card reveal"
+                        data-article="contrast"
+                    >
+
+                        <div class="blog-image-wrap">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=85"
+                                alt="Radiology team preparing imaging procedure"
+                            >
+
+                            <span class="blog-category">
+                                PATIENT GUIDE
+                            </span>
+
+                            <span class="image-number">
+                                05
+                            </span>
+
+                        </div>
+
+
+                        <div class="blog-card-content">
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i data-lucide="calendar"></i>
+                                    22 Sep 2026
+                                </span>
+
+                                <span>
+                                    <i data-lucide="clock-3"></i>
+                                    6 min read
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                What Is Contrast?
+                                Understanding Contrast-Enhanced Scans
+                            </h3>
+
+
+                            <p>
+
+                                Find out why contrast may be used,
+                                how it improves certain images and
+                                what information your care team needs.
+
+                            </p>
+
+
+                            <button
+                                class="read-article"
+                                data-article="contrast"
+                                type="button"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-up-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="wave-border"></div>
+
+                    </article>
+
+
+                    <!-- ARTICLE 6 -->
+
+                    <article
+                        class="blog-card reveal"
+                        data-article="report"
+                    >
+
+                        <div class="blog-image-wrap">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1000&q=85"
+                                alt="Healthcare professional reviewing medical report"
+                            >
+
+                            <span class="blog-category">
+                                REPORTS
+                            </span>
+
+                            <span class="image-number">
+                                06
+                            </span>
+
+                        </div>
+
+
+                        <div class="blog-card-content">
+
+                            <div class="blog-meta">
+
+                                <span>
+                                    <i data-lucide="calendar"></i>
+                                    18 Sep 2026
+                                </span>
+
+                                <span>
+                                    <i data-lucide="clock-3"></i>
+                                    5 min read
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                How to Read a Radiology
+                                Report Without Feeling Lost
+                            </h3>
+
+
+                            <p>
+
+                                Learn the basic sections of a
+                                radiology report and what common
+                                terms generally mean.
+
+                            </p>
+
+
+                            <button
+                                class="read-article"
+                                data-article="report"
+                                type="button"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-up-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="wave-border"></div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FEATURE STRIP
+        ================================================== -->
+
+        <section class="knowledge-strip">
+
+            <div class="container">
+
+                <div class="knowledge-inner reveal">
+
+                    <div class="knowledge-icon">
+
+                        <i data-lucide="stethoscope"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            PATIENT-FIRST INFORMATION
+                        </span>
+
+                        <h2>
+                            Questions are part of good healthcare.
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-light"
+                    >
+
+                        Ask Our Team
+
+                        <i data-lucide="arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FAQ
+        ================================================== -->
+
+        <section class="section faq-section">
+
+            <div class="container faq-grid">
+
+                <div class="faq-intro reveal-left">
+
+                    <span class="section-kicker">
+
+                        <i data-lucide="circle-help"></i>
+
+                        COMMON QUESTIONS
+
+                    </span>
+
+                    <h2>
+                        Still have a question?
+                    </h2>
+
+                    <p>
+                        Here are answers to some common
+                        questions about our health insights
+                        and diagnostic imaging.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-secondary"
+                    >
+
+                        Contact Us
+
+                        <i data-lucide="arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="faq-list reveal-right">
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+
+                            <span>
+                                Can I rely on a blog article
+                                to diagnose a condition?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                No. Our articles are educational
+                                resources and should not replace
+                                advice from your doctor or qualified
+                                healthcare professional.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+
+                            <span>
+                                Why do different scans use
+                                different technologies?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                MRI, CT and ultrasound use different
+                                physical principles. Your doctor
+                                chooses the examination based on
+                                the body area and clinical question.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+
+                            <span>
+                                Do I need to prepare before every scan?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                Not always. Preparation depends
+                                on the specific examination. Always
+                                follow the instructions given by
+                                your imaging center or doctor.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+
+                            <span>
+                                When will I receive my imaging report?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                Reporting time depends on the type
+                                of examination and clinical priority.
+                                Our team can explain the expected
+                                timeline when your appointment is booked.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         ARTICLE MODAL
+    ====================================================== -->
+
+    <div
+        class="article-modal"
+        id="articleModal"
+        aria-hidden="true"
+    >
+
+        <div class="article-modal-box">
+
+            <button
+                class="article-modal-close"
+                id="articleModalClose"
+                type="button"
+                aria-label="Close article"
+            >
+
+                <i data-lucide="x"></i>
+
+            </button>
+
+
+            <div class="article-modal-image">
+
+                <img
+                    id="modalArticleImage"
+                    src=""
+                    alt=""
+                >
+
+                <div
+                    class="modal-category"
+                    id="modalArticleCategory"
+                ></div>
+
+            </div>
+
+
+            <div class="article-modal-content">
+
+                <div class="article-modal-meta">
+
+                    <span id="modalArticleDate"></span>
+
+                    <span id="modalArticleTime"></span>
+
+                </div>
+
+
+                <h2 id="modalArticleTitle"></h2>
+
+
+                <div
+                    class="article-body"
+                    id="modalArticleBody"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-mark">
+
+                            <img
+                    src="../assets/images/heartbeat-svgrepo-com.svg"
+                    alt="Clarity Imaging Center"
+                >
+
+                        </span>
+
+                        <span class="logo-text">
+
+                            <strong>CLARITY</strong>
+
+                            <small>
+                                IMAGING CENTER
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                    <p>
+
+                        Advanced diagnostic imaging delivered
+                        with precision, compassion and a
+                        patient-first approach.
+
+                    </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                       <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                       <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Explore</h3>
+
+                    <a href="../index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+                    <a href="blog.html">
+                        Health Insights
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Imaging</h3>
+
+                    <a href="mri.html">
+                        MRI Imaging
+                    </a>
+
+                    <a href="ct-scan.html">
+                        CT Scan
+                    </a>
+
+                    <a href="ultrasound.html">
+                        Ultrasound
+                    </a>
+
+                    <a href="prepare-scan.html">
+                        Scan Preparation
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column footer-contact">
+
+                    <h3>Contact</h3>
+
+                    <a href="#">
+
+                        <i data-lucide="map-pin"></i>
+
+                        <span>
+                            24 Health Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </span>
+
+                    </a>
+
+
+                    <a href="tel:+914445678900">
+
+                        <i data-lucide="phone"></i>
+
+                        <span>
+                            +91 44 4567 8900
+                        </span>
+
+                    </a>
+
+
+                    <a href="mailto:hello@clarityimaging.in">
+
+                        <i data-lucide="mail"></i>
+
+                        <span>
+                            hello@clarityimaging.in
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Clarity Imaging Center.
+                    All rights reserved.
+                </p>
+
+                <div>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms of Service
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         FLOATING ACTIONS
+    ====================================================== -->
+
+    <div class="fab-stack">
+
+        <button
+            class="fab fab-top"
+            id="backToTop"
+            type="button"
+            aria-label="Back to top"
+        >
+
+            <i data-lucide="arrow-up"></i>
+
+        </button>
+
+
+        <a
+            class="fab fab-call"
+            href="tel:+914445678900"
+            aria-label="Call Clarity Imaging Center"
+        >
+
+            <i data-lucide="phone"></i>
+
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         LOGIN MODAL
+    ====================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="loginModal"
+    >
+
+        <div class="auth-modal">
+
+            <button
+                class="modal-close"
+                type="button"
+            >
+
+                <i data-lucide="x"></i>
+
+            </button>
+
+
+            <div class="auth-icon">
+
+                <i data-lucide="lock-keyhole"></i>
+
+            </div>
+
+
+            <span class="auth-label">
+                Patient Portal
+            </span>
+
+
+            <h2>
+                Welcome back
+            </h2>
+
+
+            <p>
+                Login to manage your appointments
+                and patient information.
+            </p>
+
+
+            <form class="auth-form">
+
+                <label>
+
+                    Email Address
+
+                    <input
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Password
+
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary full-btn"
+                >
+
+                    Login
+
+                    <i data-lucide="arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Don't have an account?
+
+                <button
+                    type="button"
+                    data-modal="signupModal"
+                >
+                    Create one
+                </button>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SIGNUP MODAL
+    ====================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="signupModal"
+    >
+
+        <div class="auth-modal">
+
+            <button
+                class="modal-close"
+                type="button"
+            >
+
+                <i data-lucide="x"></i>
+
+            </button>
+
+
+            <div class="auth-icon">
+
+                <i data-lucide="user-plus"></i>
+
+            </div>
+
+
+            <span class="auth-label">
+                Patient Portal
+            </span>
+
+
+            <h2>
+                Create your account
+            </h2>
+
+
+            <p>
+                Create a patient account for easier
+                appointment management.
+            </p>
+
+
+            <form class="auth-form">
+
+                <label>
+
+                    Full Name
+
+                    <input
+                        type="text"
+                        placeholder="Your full name"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Email Address
+
+                    <input
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Password
+
+                    <input
+                        type="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary full-btn"
+                >
+
+                    Create Account
+
+                    <i data-lucide="arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    data-modal="loginModal"
+                >
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Global JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Blog JS -->
+    <script src="../assets/js/blog.js"></script>
+
+</body>
+
+</html>

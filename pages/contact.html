@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Clarity Imaging Center</title>
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../assets/images/heartbeat-svgrepo-com.svg"
+    >
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    >
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SCROLL PROGRESS
+========================================================= -->
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =========================================================
+     CURSOR GLOW
+========================================================= -->
+
+<div class="cursor-glow"></div>
+
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div class="page-loader" id="pageLoader">
+
+    <div class="loader-ring"></div>
+
+    <span>Loading Clarity</span>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <!-- LOGO -->
+
+        <a href="../index.html" class="logo">
+
+            <span class="logo-mark">
+
+                <img
+                    src="../assets/images/heartbeat-svgrepo-com.svg"
+                    alt="Clarity Imaging Center"
+                >
+
+            </span>
+
+            <span class="logo-text">
+
+                <strong>CLARITY</strong>
+
+                <small>IMAGING CENTER</small>
+
+            </span>
+
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+
+        <nav class="desktop-nav">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="home2.html">
+                Home 2
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                type="button"
+                aria-label="Toggle theme"
+            >
+
+                <i data-lucide="moon"></i>
+
+            </button>
+
+
+            <button
+                class="icon-btn rtl-btn"
+                id="rtlToggle"
+                type="button"
+                aria-label="Toggle RTL"
+            >
+
+                <span>RTL</span>
+
+            </button>
+
+
+            <!-- Header CTA -->
+            <a
+                href="#appointment"
+                class="btn btn-primary header-cta"
+            >
+                Book / Enquire
+            </a>
+
+
+            <button
+                class="icon-btn menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open menu"
+            >
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="home2.html">
+            Home 2
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="blog.html">
+            Blog
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <a
+            href="#appointment"
+            class="mobile-appointment"
+        >
+            Book / Enquire
+
+            <i data-lucide="arrow-up-right"></i>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     PROFILE DROPDOWN
+========================================================= -->
+
+<div class="profile-dropdown" id="profileDropdown">
+
+    <div class="profile-dropdown-head">
+
+        <div class="profile-avatar">
+
+            <i data-lucide="user-round"></i>
+
+        </div>
+
+        <div>
+
+            <strong>Patient Portal</strong>
+
+            <span>Manage your appointments</span>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="account-action"
+        data-modal="loginModal"
+        type="button"
+    >
+
+        <i data-lucide="log-in"></i>
+
+        <span>Login</span>
+
+    </button>
+
+
+    <button
+        class="account-action"
+        data-modal="signupModal"
+        type="button"
+    >
+
+        <i data-lucide="user-plus"></i>
+
+        <span>Sign Up</span>
+
+    </button>
+
+</div>
+
+
+<!-- =========================================================
+     CONTACT HERO
+========================================================= -->
+
+<main>
+
+<section class="contact-hero">
+
+    <div class="container contact-hero-grid">
+
+        <div class="contact-hero-content reveal-left">
+
+            <span class="eyebrow">
+                <i data-lucide="message-circle"></i>
+                GET IN TOUCH
+            </span>
+
+            <h1>
+                Let’s make your
+                <span>next step clearer.</span>
+            </h1>
+
+            <p>
+                Have a question about an imaging service, scan preparation,
+                appointment or report? Our patient support team is here
+                to help you navigate the process with confidence.
+            </p>
+
+            <div class="hero-contact-actions">
+
+                <a
+                    href="tel:+914445678900"
+                    class="btn btn-primary"
+                >
+
+                    <i data-lucide="phone"></i>
+
+                    Call Our Center
+
+                </a>
+
+                <a
+                    href="#contact-form"
+                    class="text-link"
+                >
+
+                    Send an Enquiry
+
+                    <i data-lucide="arrow-down"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-hero-visual reveal-right">
+
+            <div class="hero-orbit orbit-one"></div>
+
+            <div class="hero-orbit orbit-two"></div>
+
+            <div class="hero-contact-card">
+
+                <div class="contact-card-icon">
+
+                    <i data-lucide="scan-line"></i>
+
+                </div>
+
+                <span>Patient Support</span>
+
+                <strong>
+                    Here when you need clarity.
+                </strong>
+
+                <div class="support-status">
+
+                    <span class="status-dot"></span>
+
+                    Support available today
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-contact-card floating-card-one">
+
+                <i data-lucide="clock-3"></i>
+
+                <div>
+
+                    <strong>08:00 AM</strong>
+
+                    <span>Center opens</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-contact-card floating-card-two">
+
+                <i data-lucide="navigation"></i>
+
+                <div>
+
+                    <strong>Chennai</strong>
+
+                    <span>Easy to reach</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-wave"></div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT INFO
+========================================================= -->
+
+<section class="contact-info-section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="eyebrow">
+                <i data-lucide="map-pin"></i>
+                CONTACT DETAILS
+            </span>
+
+            <h2>
+                Reach us without the guesswork.
+            </h2>
+
+            <p>
+                Choose the channel that works best for you.
+                Our team will help with appointments, scan preparation
+                and general imaging enquiries.
+            </p>
+
+        </div>
+
+
+        <div class="contact-info-grid">
+
+            <!-- ADDRESS -->
+
+            <article class="contact-info-card reveal">
+
+                <div class="info-icon">
+
+                    <i data-lucide="map-pin"></i>
+
+                </div>
+
+                <div>
+
+                    <span class="info-label">
+                        VISIT US
+                    </span>
+
+                    <h3>
+                        Imaging Center
+                    </h3>
+
+                    <p>
+                        24 Health Avenue,<br>
+                        Chennai, Tamil Nadu
+                    </p>
+
+                    <a
+                        href="#location"
+                        class="info-link"
+                    >
+                        View on map
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHONE -->
+
+            <article class="contact-info-card reveal">
+
+                <div class="info-icon">
+
+                    <i data-lucide="phone"></i>
+
+                </div>
+
+                <div>
+
+                    <span class="info-label">
+                        CALL US
+                    </span>
+
+                    <h3>
+                        +91 44 4567 8900
+                    </h3>
+
+                    <p>
+                        Speak with our patient support team
+                        for appointments and enquiries.
+                    </p>
+
+                    <a
+                        href="tel:+914445678900"
+                        class="info-link"
+                    >
+                        Call now
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EMAIL -->
+
+            <article class="contact-info-card reveal">
+
+                <div class="info-icon">
+
+                    <i data-lucide="mail"></i>
+
+                </div>
+
+                <div>
+
+                    <span class="info-label">
+                        EMAIL US
+                    </span>
+
+                    <h3>
+                        hello@clarityimaging.in
+                    </h3>
+
+                    <p>
+                        Send us your general questions and
+                        our team will respond.
+                    </p>
+
+                    <a
+                        href="mailto:hello@clarityimaging.in"
+                        class="info-link"
+                    >
+                        Send email
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FORM + HOURS
+========================================================= -->
+
+<section class="contact-workspace" id="appointment">
+
+    <div class="container workspace-grid">
+
+        <!-- FORM -->
+
+        <div
+            class="contact-form-panel reveal-left"
+            id="contact-form"
+        >
+
+            <div class="panel-heading">
+
+                <span class="eyebrow">
+                    <i data-lucide="send"></i>
+                    SEND AN ENQUIRY
+                </span>
+
+                <h2>
+                    How can we help?
+                </h2>
+
+                <p>
+                    Share a few details and our team can guide
+                    you toward the right next step.
+                </p>
+
+            </div>
+
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="form-row">
+
+                    <label>
+
+                        <span>Full Name</span>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Your full name"
+                            required
+                        >
+
+                    </label>
+
+
+                    <label>
+
+                        <span>Phone Number</span>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+91 98765 43210"
+                            required
+                        >
+
+                    </label>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <label>
+
+                        <span>Email Address</span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </label>
+
+
+                    <label>
+
+                        <span>Imaging Service</span>
+
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option value="MRI">
+                                MRI Imaging
+                            </option>
+
+                            <option value="CT">
+                                CT Scan
+                            </option>
+
+                            <option value="Ultrasound">
+                                Ultrasound
+                            </option>
+
+                            <option value="General">
+                                General Enquiry
+                            </option>
+
+                        </select>
+
+                    </label>
+
+                </div>
+
+
+                <label>
+
+                    <span>Preferred Date</span>
+
+                    <input
+                        type="date"
+                        id="preferredDate"
+                        name="preferredDate"
+                    >
+
+                </label>
+
+
+                <label>
+
+                    <span>Your Message</span>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Tell us how we can help..."
+                        required
+                    ></textarea>
+
+                </label>
+
+
+                <div class="form-footer">
+
+                    <p>
+                        <i data-lucide="shield-check"></i>
+
+                        Your information is handled with care.
+
+                    </p>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+
+                        Send Enquiry
+
+                        <i data-lucide="arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="form-success"
+                    id="formSuccess"
+                >
+
+                    <div class="success-icon">
+
+                        <i data-lucide="check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Enquiry received
+                        </strong>
+
+                        <span>
+                            Thank you. Our team will get back to you shortly.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- HOURS -->
+
+        <aside class="hours-panel reveal-right">
+
+            <div class="hours-top">
+
+                <span class="eyebrow">
+                    <i data-lucide="calendar-clock"></i>
+                    OPENING HOURS
+                </span>
+
+                <div class="open-status">
+
+                    <span class="status-dot"></span>
+
+                    <span id="openStatus">
+                        Checking...
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <h2>
+                Plan your visit.
+            </h2>
+
+            <p>
+                Our center operates throughout the week with
+                dedicated appointment slots for diagnostic imaging.
+            </p>
+
+
+            <div class="hours-list">
+
+                <div>
+
+                    <span>Monday</span>
+
+                    <strong>08:00 AM — 08:00 PM</strong>
+
+                </div>
+
+                <div>
+
+                    <span>Tuesday</span>
+
+                    <strong>08:00 AM — 08:00 PM</strong>
+
+                </div>
+
+                <div>
+
+                    <span>Wednesday</span>
+
+                    <strong>08:00 AM — 08:00 PM</strong>
+
+                </div>
+
+                <div>
+
+                    <span>Thursday</span>
+
+                    <strong>08:00 AM — 08:00 PM</strong>
+
+                </div>
+
+                <div>
+
+                    <span>Friday</span>
+
+                    <strong>08:00 AM — 08:00 PM</strong>
+
+                </div>
+
+                <div>
+
+                    <span>Saturday</span>
+
+                    <strong>08:00 AM — 05:00 PM</strong>
+
+                </div>
+
+                <div class="closed-day">
+
+                    <span>Sunday</span>
+
+                    <strong>Closed</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="hours-note">
+
+                <i data-lucide="info"></i>
+
+                <p>
+                    Emergency imaging requests may require
+                    separate clinical coordination.
+                </p>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REAL MAP
+========================================================= -->
+
+<section class="location-section" id="location">
+
+    <div class="container">
+
+        <div class="location-header reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    <i data-lucide="navigation"></i>
+                    FIND CLARITY
+                </span>
+
+                <h2>
+                    Visit our Chennai center.
+                </h2>
+
+            </div>
+
+            <a
+                class="btn btn-outline"
+                href="https://www.google.com/maps/search/?api=1&query=24+Health+Avenue+Chennai+Tamil+Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <i data-lucide="route"></i>
+
+                Get Directions
+
+            </a>
+
+        </div>
+
+
+        <div class="map-wrapper reveal">
+
+            <div
+                id="clarityMap"
+                class="clarity-map"
+            ></div>
+
+
+            <div class="map-overlay-card">
+
+                <div class="map-mini-icon">
+
+                    <i data-lucide="scan-line"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Clarity Imaging Center
+                    </strong>
+
+                    <span>
+                        24 Health Avenue, Chennai
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="contact-faq section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="eyebrow">
+                <i data-lucide="circle-help"></i>
+                QUICK ANSWERS
+            </span>
+
+            <h2>
+                Before you reach out.
+            </h2>
+
+            <p>
+                Here are answers to some of the questions
+                patients commonly ask our support team.
+            </p>
+
+        </div>
+
+
+        <div class="faq-list">
+
+            <div class="contact-faq-item reveal">
+
+                <button
+                    class="contact-faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Do I need an appointment?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+                <div class="contact-faq-answer">
+
+                    <p>
+                        We recommend booking an appointment for MRI,
+                        CT and scheduled ultrasound examinations.
+                        This helps us allocate the appropriate scanner,
+                        staff and preparation time.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-faq-item reveal">
+
+                <button
+                    class="contact-faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Can I ask about scan preparation?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+                <div class="contact-faq-answer">
+
+                    <p>
+                        Yes. Preparation requirements vary depending
+                        on the examination. Our team can explain fasting,
+                        medication, clothing and other instructions
+                        before your appointment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-faq-item reveal">
+
+                <button
+                    class="contact-faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        How do I receive my imaging report?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+                <div class="contact-faq-answer">
+
+                    <p>
+                        Report availability depends on the examination.
+                        Once your report is ready, our patient support
+                        team can guide you through the available
+                        collection or digital access options.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-faq-item reveal">
+
+                <button
+                    class="contact-faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Can I change my appointment?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+                <div class="contact-faq-answer">
+
+                    <p>
+                        Yes. Contact our support team as early as possible
+                        and provide your appointment details. We will help
+                        you identify another suitable time.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="contact-final-cta">
+
+    <div class="container">
+
+        <div class="final-cta-inner reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    <i data-lucide="heart-handshake"></i>
+                    PATIENT-FIRST CARE
+                </span>
+
+                <h2>
+                    Questions are always welcome.
+                </h2>
+
+                <p>
+                    From your first enquiry to your imaging appointment,
+                    we are here to make the process easier to understand.
+                </p>
+
+            </div>
+
+            <a
+                href="tel:+914445678900"
+                class="btn btn-light"
+            >
+
+                <i data-lucide="phone"></i>
+
+                Talk to Our Team
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a
+                    href="../index.html"
+                    class="logo footer-logo"
+                >
+
+                    <span class="logo-mark">
+
+                        <img
+                    src="../assets/images/heartbeat-svgrepo-com.svg"
+                    alt="Clarity Imaging Center"
+                >
+
+                    </span>
+
+                    <span class="logo-text">
+
+                        <strong>CLARITY</strong>
+
+                        <small>IMAGING CENTER</small>
+
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Advanced diagnostic imaging delivered with
+                    precision, compassion and a patient-first approach.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                       <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                       <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="blog.html">
+                    Health Insights
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Imaging</h3>
+
+                <a href="mri.html">
+                    MRI Imaging
+                </a>
+
+                <a href="ct-scan.html">
+                    CT Scan
+                </a>
+
+                <a href="ultrasound.html">
+                    Ultrasound
+                </a>
+
+                <a href="prepare-scan.html">
+                    Scan Preparation
+                </a>
+
+            </div>
+
+
+            <div class="footer-column footer-contact">
+
+                <h3>Contact</h3>
+
+                <a href="#location">
+
+                    <i data-lucide="map-pin"></i>
+
+                    <span>
+                        24 Health Avenue,<br>
+                        Chennai, Tamil Nadu
+                    </span>
+
+                </a>
+
+
+                <a href="tel:+914445678900">
+
+                    <i data-lucide="phone"></i>
+
+                    <span>
+                        +91 44 4567 8900
+                    </span>
+
+                </a>
+
+
+                <a href="mailto:hello@clarityimaging.in">
+
+                    <i data-lucide="mail"></i>
+
+                    <span>
+                        hello@clarityimaging.in
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Clarity Imaging Center. All rights reserved.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms of Service
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     FLOATING ACTIONS
+========================================================= -->
+
+<div class="fab-stack">
+
+    <button
+        class="fab fab-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i data-lucide="arrow-up"></i>
+
+    </button>
+
+
+    <a
+        class="fab fab-call"
+        href="tel:+914445678900"
+        aria-label="Call Clarity Imaging Center"
+    >
+
+        <i data-lucide="phone"></i>
+
+    </a>
+
+</div>
+
+
+<!-- =========================================================
+     LOGIN MODAL
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="loginModal"
+>
+
+    <div class="auth-modal">
+
+        <button
+            class="modal-close"
+            type="button"
+        >
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+
+        <div class="auth-icon">
+
+            <i data-lucide="lock-keyhole"></i>
+
+        </div>
+
+
+        <span class="auth-label">
+            Patient Portal
+        </span>
+
+
+        <h2>
+            Welcome back
+        </h2>
+
+
+        <p>
+            Login to manage your appointments
+            and patient information.
+        </p>
+
+
+        <form class="auth-form">
+
+            <label>
+
+                Email Address
+
+                <input
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+
+                Password
+
+                <input
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary full-btn"
+            >
+
+                Login
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+        </form>
+
+
+        <p class="auth-switch">
+
+            Don't have an account?
+
+            <button
+                type="button"
+                data-modal="signupModal"
+            >
+                Create one
+            </button>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     SIGNUP MODAL
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="signupModal"
+>
+
+    <div class="auth-modal">
+
+        <button
+            class="modal-close"
+            type="button"
+        >
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+
+        <div class="auth-icon">
+
+            <i data-lucide="user-plus"></i>
+
+        </div>
+
+
+        <span class="auth-label">
+            Patient Portal
+        </span>
+
+
+        <h2>
+            Create your account
+        </h2>
+
+
+        <p>
+            Create a patient account for easier
+            appointment management.
+        </p>
+
+
+        <form class="auth-form">
+
+            <label>
+
+                Full Name
+
+                <input
+                    type="text"
+                    placeholder="Your full name"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+
+                Email Address
+
+                <input
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+
+                Password
+
+                <input
+                    type="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary full-btn"
+            >
+
+                Create Account
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+        </form>
+
+
+        <p class="auth-switch">
+
+            Already have an account?
+
+            <button
+                type="button"
+                data-modal="loginModal"
+            >
+                Login
+            </button>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     SCRIPTS
+========================================================= -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+></script>
+
+<script src="../assets/js/main.js"></script>
+
+<script src="../assets/js/contact.js"></script>
+
+</body>
+
+</html>

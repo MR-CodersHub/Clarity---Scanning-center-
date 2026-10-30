@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Clarity Imaging Center</title>
+
+    <meta
+        name="description"
+        content="Explore MRI, CT Scan, Ultrasound and advanced diagnostic imaging services at Clarity Imaging Center."
+    >
+
+    <link
+        rel="icon"
+        href="../assets/images/heartbeat-svgrepo-com.svg"
+    >
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/services.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         SCROLL PROGRESS
+    ====================================================== -->
+
+    <div
+        class="scroll-progress"
+        id="scrollProgress"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         CURSOR GLOW
+    ====================================================== -->
+
+    <div
+        class="cursor-glow"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+        <div class="loader-ring"></div>
+        <span>Loading Clarity</span>
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <div class="container header-inner">
+
+            <!-- LOGO -->
+
+            <a href="../index.html" class="logo">
+
+                <span class="logo-mark">
+                    <img
+                        src="../assets/images/heartbeat-svgrepo-com.svg"
+                        alt="Clarity Imaging Center"
+                    >
+                </span>
+
+                <span class="logo-text">
+                    <strong>CLARITY</strong>
+                    <small>IMAGING CENTER</small>
+                </span>
+
+            </a>
+
+
+            <!-- DESKTOP NAV -->
+
+            <nav class="desktop-nav">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="home2.html">
+                    Home 2
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html" class="active">
+                    Services
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- HEADER ACTIONS -->
+
+            <div class="header-actions">
+
+                <button
+                    class="icon-btn"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Toggle dark mode"
+                >
+                    <i data-lucide="moon"></i>
+                </button>
+
+
+                <button
+                    class="icon-btn rtl-btn"
+                    id="rtlToggle"
+                    type="button"
+                    aria-label="Toggle RTL"
+                >
+                    <span>RTL</span>
+                </button>
+
+
+                <!-- Header CTA -->
+                <a
+                    href="contact.html"
+                    class="btn btn-primary header-cta"
+                >
+                    Book / Enquire
+                </a>
+
+
+                <button
+                    class="icon-btn menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open menu"
+                >
+                    <i data-lucide="menu"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE NAV -->
+
+        <div
+            class="mobile-nav"
+            id="mobileNav"
+        >
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="home2.html">
+                Home 2
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a
+                href="contact.html"
+                class="mobile-appointment"
+            >
+                Book / Enquire
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         PROFILE DROPDOWN
+    ====================================================== -->
+
+    <div
+        class="profile-dropdown"
+        id="profileDropdown"
+    >
+
+        <div class="profile-dropdown-head">
+
+            <div class="profile-avatar">
+                <i data-lucide="user-round"></i>
+            </div>
+
+            <div>
+                <strong>Patient Portal</strong>
+                <span>Manage your appointments</span>
+            </div>
+
+        </div>
+
+
+        <button
+            class="account-action"
+            type="button"
+            data-modal="loginModal"
+        >
+            <i data-lucide="log-in"></i>
+            <span>Login</span>
+        </button>
+
+
+        <button
+            class="account-action"
+            type="button"
+            data-modal="signupModal"
+        >
+            <i data-lucide="user-plus"></i>
+            <span>Sign Up</span>
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             SERVICES HERO
+        ================================================== -->
+
+        <section class="services-hero">
+
+            <div class="services-hero-bg">
+
+                <div class="hero-grid-pattern"></div>
+
+                <div class="hero-orbit orbit-one"></div>
+                <div class="hero-orbit orbit-two"></div>
+
+            </div>
+
+
+            <div class="container services-hero-content">
+
+                <div class="services-hero-copy reveal-left">
+
+                    <span class="eyebrow">
+                        <i data-lucide="scan-line"></i>
+                        DIAGNOSTIC IMAGING
+                    </span>
+
+                    <h1>
+                        Imaging designed around
+                        <span>clarity.</span>
+                    </h1>
+
+                    <p>
+                        From advanced MRI and high-speed CT imaging
+                        to detailed ultrasound examinations, our
+                        diagnostic services combine modern technology
+                        with thoughtful patient care.
+                    </p>
+
+
+                    <div class="services-hero-actions">
+
+                        <a
+                            href="contact.html"
+                            class="btn btn-primary"
+                        >
+                            Book an Appointment
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <a
+                            href="#services-grid"
+                            class="btn btn-secondary"
+                        >
+                            Explore Services
+                            <i data-lucide="arrow-down"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-trust-row">
+
+                        <div class="trust-item">
+                            <i data-lucide="badge-check"></i>
+                            <span>Experienced imaging team</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <i data-lucide="shield-check"></i>
+                            <span>Patient-first protocols</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="services-hero-visual reveal-right">
+
+                    <div class="scan-frame">
+
+                        <div class="scan-frame-corner top-left"></div>
+                        <div class="scan-frame-corner top-right"></div>
+                        <div class="scan-frame-corner bottom-left"></div>
+                        <div class="scan-frame-corner bottom-right"></div>
+
+
+                        <div class="scan-frame-header">
+
+                            <span>
+                                <i data-lucide="activity"></i>
+                                IMAGING SUITE
+                            </span>
+
+                            <span class="live-dot">
+                                LIVE
+                            </span>
+
+                        </div>
+
+
+                        <div class="scan-visual">
+
+                            <div class="scan-circle circle-one"></div>
+                            <div class="scan-circle circle-two"></div>
+                            <div class="scan-circle circle-three"></div>
+
+                            <div class="scan-crosshair"></div>
+
+                            <div class="scan-pulse"></div>
+
+                        </div>
+
+
+                        <div class="scan-frame-footer">
+
+                            <span>
+                                SYSTEM STATUS
+                            </span>
+
+                            <strong>
+                                READY
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-data data-one">
+                        <i data-lucide="radio"></i>
+                        <div>
+                            <small>PRECISION</small>
+                            <strong>High Resolution</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="floating-data data-two">
+                        <i data-lucide="clock-3"></i>
+                        <div>
+                            <small>WORKFLOW</small>
+                            <strong>Patient Focused</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <section class="services-intro section">
+
+            <div class="container">
+
+                <div class="section-heading-centered section-heading centered reveal">
+
+                    <span class="eyebrow">
+                        OUR CAPABILITIES
+                    </span>
+
+                    <h2>
+                        The right scan for
+                        <span>the right question.</span>
+                    </h2>
+
+                    <p>
+                        Diagnostic imaging helps clinicians look beyond
+                        symptoms and understand what is happening inside
+                        the body. Each modality has a different purpose,
+                        and our team helps patients navigate the process
+                        with confidence.
+                    </p>
+
+                </div>
+
+
+                <div class="service-principles">
+
+                    <article class="principle-card reveal">
+
+                        <div class="principle-icon">
+                            <i data-lucide="crosshair"></i>
+                        </div>
+
+                        <div>
+                            <span>01</span>
+                            <h3>Purposeful Imaging</h3>
+                            <p>
+                                Every examination is selected according
+                                to the clinical question and patient need.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="principle-card reveal">
+
+                        <div class="principle-icon">
+                            <i data-lucide="scan-search"></i>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <h3>Detailed Evaluation</h3>
+                            <p>
+                                Modern imaging technology supports clear
+                                and clinically useful diagnostic information.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="principle-card reveal">
+
+                        <div class="principle-icon">
+                            <i data-lucide="heart-handshake"></i>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <h3>Human Care</h3>
+                            <p>
+                                We explain each step and create a calm,
+                                respectful experience for every patient.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICES GRID
+        ================================================== -->
+
+        <section
+            class="services-grid-section section"
+            id="services-grid"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal-left">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            IMAGING SERVICES
+                        </span>
+
+                        <h2>
+                            Advanced technology.
+                            <span>Clearer answers.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Explore our core diagnostic imaging services
+                        and understand what each examination is designed
+                        to help evaluate.
+                    </p>
+
+                </div>
+
+
+                <div class="service-feature-grid">
+
+
+                    <!-- MRI -->
+
+                    <article class="service-feature-card  reveal-left">
+
+                        <div class="service-image mri-image">
+
+                            <div class="image-overlay"></div>
+
+                            <div class="service-number">
+                                01
+                            </div>
+
+                            <div class="service-image-label">
+                                <i data-lucide="scan"></i>
+                                MRI
+                            </div>
+
+                        </div>
+
+
+                        <div class="service-feature-content">
+
+                            <div class="service-card-top">
+
+                                <span class="service-tag">
+                                    MAGNETIC RESONANCE
+                                </span>
+
+                                <div class="service-icon">
+                                    <i data-lucide="scan"></i>
+                                </div>
+
+                            </div>
+
+                            <h3>
+                                MRI Imaging
+                            </h3>
+
+                            <p>
+                                Detailed imaging using magnetic fields
+                                and radio waves to visualize soft tissues,
+                                joints, the brain, spine and other areas
+                                of the body.
+                            </p>
+
+
+                            <div class="service-points">
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Soft tissue detail
+                                </span>
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Brain & spine imaging
+                                </span>
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Joint evaluation
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="mri.html"
+                                class="service-link"
+                            >
+                                Explore MRI
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CT -->
+
+                    <article class="service-feature-card reveal-right">
+
+                        <div class="service-image ct-image" style="background-image: url(../assets/images/ct.jpg);background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;">
+
+                            <div class="image-overlay"></div>
+
+                            <div class="service-number">
+                                02
+                            </div>
+
+                            <div class="service-image-label">
+                                <i data-lucide="circle-dot"></i>
+                                CT
+                            </div>
+
+                        </div>
+
+
+                        <div class="service-feature-content">
+
+                            <div class="service-card-top">
+
+                                <span class="service-tag">
+                                    COMPUTED TOMOGRAPHY
+                                </span>
+
+                                <div class="service-icon">
+                                    <i data-lucide="circle-dot"></i>
+                                </div>
+
+                            </div>
+
+                            <h3>
+                                CT Scan
+                            </h3>
+
+                            <p>
+                                Cross-sectional imaging that creates
+                                detailed views of internal structures
+                                and supports rapid diagnostic assessment.
+                            </p>
+
+
+                            <div class="service-points">
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Rapid imaging
+                                </span>
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Chest & abdomen
+                                </span>
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Detailed cross-sections
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="ct-scan.html"
+                                class="service-link"
+                            >
+                                Explore CT
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ULTRASOUND -->
+
+                    <article class="service-feature-card reveal-left">
+
+                        <div class="service-image ultrasound-image" style="background-image: url(../assets/images/ultra.jpg);background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;">
+
+                            <div class="image-overlay"></div>
+
+                            <div class="service-number">
+                                03
+                            </div>
+
+                            <div class="service-image-label">
+                                <i data-lucide="waves"></i>
+                                ULTRASOUND
+                            </div>
+
+                        </div>
+
+
+                        <div class="service-feature-content">
+
+                            <div class="service-card-top">
+
+                                <span class="service-tag">
+                                    SONOGRAPHY
+                                </span>
+
+                                <div class="service-icon">
+                                    <i data-lucide="waves"></i>
+                                </div>
+
+                            </div>
+
+                            <h3>
+                                Ultrasound
+                            </h3>
+
+                            <p>
+                                Real-time imaging using sound waves to
+                                examine organs, soft tissues, blood flow
+                                and selected areas during dynamic assessment.
+                            </p>
+
+
+                            <div class="service-points">
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Real-time imaging
+                                </span>
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Abdominal studies
+                                </span>
+
+                                <span>
+                                    <i data-lucide="check"></i>
+                                    Doppler assessment
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="ultrasound.html"
+                                class="service-link"
+                            >
+                                Explore Ultrasound
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             COMPARISON
+        ================================================== -->
+
+        <section class="modality-section section">
+
+            <div class="container">
+
+                <div class="modality-layout">
+
+                    <div class="modality-copy reveal-left">
+
+                        <span class="eyebrow">
+                            FIND YOUR MODALITY
+                        </span>
+
+                        <h2>
+                            Three technologies.
+                            <span>Different strengths.</span>
+                        </h2>
+
+                        <p>
+                            MRI, CT and ultrasound each provide a different
+                            view of the body. Your referring clinician
+                            determines which examination is appropriate
+                            based on your symptoms and clinical needs.
+                        </p>
+
+
+                        <div class="modality-selector">
+
+                            <button
+                                class="modality-btn active"
+                                data-modality="mri"
+                                type="button"
+                            >
+                                <span>01</span>
+                                MRI
+                            </button>
+
+                            <button
+                                class="modality-btn"
+                                data-modality="ct"
+                                type="button"
+                            >
+                                <span>02</span>
+                                CT Scan
+                            </button>
+
+                            <button
+                                class="modality-btn"
+                                data-modality="ultrasound"
+                                type="button"
+                            >
+                                <span>03</span>
+                                Ultrasound
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="modality-display reveal-right">
+
+
+                        <!-- MRI PANEL -->
+
+                        <div
+                            class="modality-panel active"
+                            data-panel="mri"
+                        >
+
+                            <div class="modality-panel-header">
+
+                                <span>
+                                    MRI
+                                </span>
+
+                                <i data-lucide="scan"></i>
+
+                            </div>
+
+                            <h3>
+                                Excellent soft-tissue contrast
+                            </h3>
+
+                            <p>
+                                MRI is particularly useful when detailed
+                                soft-tissue information is important.
+                            </p>
+
+
+                            <div class="modality-facts">
+
+                                <div>
+                                    <small>TECHNOLOGY</small>
+                                    <strong>Magnetic field</strong>
+                                </div>
+
+                                <div>
+                                    <small>STRENGTH</small>
+                                    <strong>Soft tissue detail</strong>
+                                </div>
+
+                                <div>
+                                    <small>COMMON AREAS</small>
+                                    <strong>Brain · Spine · Joints</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CT PANEL -->
+
+                        <div
+                            class="modality-panel"
+                            data-panel="ct"
+                        >
+
+                            <div class="modality-panel-header">
+
+                                <span>
+                                    CT SCAN
+                                </span>
+
+                                <i data-lucide="circle-dot"></i>
+
+                            </div>
+
+                            <h3>
+                                Fast cross-sectional imaging
+                            </h3>
+
+                            <p>
+                                CT can provide detailed cross-sectional
+                                views quickly and is widely used for
+                                many diagnostic situations.
+                            </p>
+
+
+                            <div class="modality-facts">
+
+                                <div>
+                                    <small>TECHNOLOGY</small>
+                                    <strong>X-ray based</strong>
+                                </div>
+
+                                <div>
+                                    <small>STRENGTH</small>
+                                    <strong>Speed & detail</strong>
+                                </div>
+
+                                <div>
+                                    <small>COMMON AREAS</small>
+                                    <strong>Chest · Abdomen · Head</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ULTRASOUND PANEL -->
+
+                        <div
+                            class="modality-panel"
+                            data-panel="ultrasound"
+                        >
+
+                            <div class="modality-panel-header">
+
+                                <span>
+                                    ULTRASOUND
+                                </span>
+
+                                <i data-lucide="waves"></i>
+
+                            </div>
+
+                            <h3>
+                                Real-time sound-wave imaging
+                            </h3>
+
+                            <p>
+                                Ultrasound provides dynamic imaging and
+                                can be useful for organs, soft tissues
+                                and blood-flow assessment.
+                            </p>
+
+
+                            <div class="modality-facts">
+
+                                <div>
+                                    <small>TECHNOLOGY</small>
+                                    <strong>Sound waves</strong>
+                                </div>
+
+                                <div>
+                                    <small>STRENGTH</small>
+                                    <strong>Real-time imaging</strong>
+                                </div>
+
+                                <div>
+                                    <small>COMMON AREAS</small>
+                                    <strong>Abdomen · Soft tissue</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PATIENT EXPERIENCE
+        ================================================== -->
+
+        <section class="service-experience section">
+
+            <div class="container">
+
+                <div class="experience-heading reveal">
+
+                    <span class="eyebrow">
+                        BEYOND THE MACHINE
+                    </span>
+
+                    <h2>
+                        Technology matters.
+                        <span>So does how you experience it.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="experience-grid">
+
+
+                    <article class="experience-card reveal">
+
+                        <div class="experience-card-number">
+                            01
+                        </div>
+
+                        <i data-lucide="message-circle"></i>
+
+                        <h3>
+                            Clear Communication
+                        </h3>
+
+                        <p>
+                            We explain the examination process, preparation
+                            requirements and what to expect before your scan.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-card reveal">
+
+                        <div class="experience-card-number">
+                            02
+                        </div>
+
+                        <i data-lucide="accessibility"></i>
+
+                        <h3>
+                            Comfortable Process
+                        </h3>
+
+                        <p>
+                            Our team focuses on respectful positioning,
+                            clear instructions and a calm environment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-card reveal">
+
+                        <div class="experience-card-number">
+                            03
+                        </div>
+
+                        <i data-lucide="file-check-2"></i>
+
+                        <h3>
+                            Organized Results
+                        </h3>
+
+                        <p>
+                            Imaging workflows are structured to support
+                            efficient reporting and communication with
+                            referring clinicians.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-card reveal">
+
+                        <div class="experience-card-number">
+                            04
+                        </div>
+
+                        <i data-lucide="shield"></i>
+
+                        <h3>
+                            Safety Awareness
+                        </h3>
+
+                        <p>
+                            Relevant screening and modality-specific
+                            precautions are considered throughout the
+                            imaging process.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PREPARATION
+        ================================================== -->
+
+        <section class="services-prep section">
+
+            <div class="container">
+
+                <div class="prep-banner reveal">
+
+                    <div class="prep-banner-icon">
+                        <i data-lucide="clipboard-check"></i>
+                    </div>
+
+                    <div class="prep-banner-content">
+
+                        <span class="eyebrow">
+                            BEFORE YOUR SCAN
+                        </span>
+
+                        <h2>
+                            Preparation can make
+                            <span>your visit smoother.</span>
+                        </h2>
+
+                        <p>
+                            Preparation requirements vary by examination.
+                            Check your appointment instructions carefully
+                            and contact our team if you are unsure.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="prepare-scan.html"
+                        class="btn btn-primary"
+                    >
+                        Scan Preparation
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FAQ
+        ================================================== -->
+
+        <section class="section faq-section services-faq">
+
+            <div class="container faq-grid">
+
+                <div class="faq-intro reveal-left">
+
+                    <span class="eyebrow">
+                        COMMON QUESTIONS
+                    </span>
+
+                    <h2>
+                        Before you
+                        <span>book your scan.</span>
+                    </h2>
+
+                    <p>
+                        Here are answers to some common questions about
+                        diagnostic imaging services.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-secondary"
+                    >
+                        Ask Our Team
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="faq-list reveal-right">
+
+
+                    <div class="faq-item open">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            <span>
+                                How do I know which scan I need?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                The appropriate examination depends on
+                                your symptoms, medical history and the
+                                clinical question your referring clinician
+                                is trying to answer. Follow the examination
+                                listed on your referral or appointment.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            <span>
+                                Do all scans require preparation?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                No. Preparation varies by examination.
+                                Some scans may require fasting, hydration
+                                or other instructions, while others require
+                                little or no preparation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            <span>
+                                Can I ask questions before my appointment?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Yes. Our team can help explain appointment
+                                instructions and general preparation
+                                requirements. Clinical decisions about the
+                                need for a particular examination should
+                                come from your referring healthcare provider.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            <span>
+                                What should I bring to my appointment?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Bring your referral or appointment details,
+                                relevant previous imaging or reports when
+                                available, and any identification or
+                                documentation requested by the center.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            <span>
+                                How can I book an imaging appointment?
+                            </span>
+
+                            <i data-lucide="plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Use our appointment page or contact the
+                                imaging center directly. Our team can help
+                                you understand the booking process and
+                                appointment requirements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="services-cta">
+
+            <div class="container">
+
+                <div class="services-cta-inner reveal">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            READY WHEN YOU ARE
+                        </span>
+
+                        <h2>
+                            Let's make your next
+                            <span>imaging visit easier.</span>
+                        </h2>
+
+                        <p>
+                            Have a referral or need help understanding
+                            your appointment requirements? Our team is
+                            here to help.
+                        </p>
+
+                    </div>
+
+
+                    <div class="services-cta-actions">
+
+                        <a
+                            href="contact.html"
+                            class="btn btn-light"
+                        >
+                            Book an Appointment
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <a
+                            href="tel:+914445678900"
+                            class="cta-phone"
+                        >
+                            <i data-lucide="phone"></i>
+
+                            <span>
+                                <small>CALL OUR TEAM</small>
+                                <strong>+91 44 4567 8900</strong>
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../index.html"
+                        class="logo footer-logo"
+                    >
+
+                        <span class="logo-mark">
+                            <img
+                    src="../assets/images/heartbeat-svgrepo-com.svg"
+                    alt="Clarity Imaging Center"
+                >
+                        </span>
+
+                        <span class="logo-text">
+                            <strong>CLARITY</strong>
+                            <small>IMAGING CENTER</small>
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        Advanced diagnostic imaging delivered with
+                        precision, compassion and a patient-first approach.
+                    </p>
+
+
+                   <div class="social-links">
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                       <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                       <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Explore</h3>
+
+                    <a href="../index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+                    <a href="blog.html">
+                        Health Insights
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Imaging</h3>
+
+                    <a href="mri.html">
+                        MRI Imaging
+                    </a>
+
+                    <a href="ct-scan.html">
+                        CT Scan
+                    </a>
+
+                    <a href="ultrasound.html">
+                        Ultrasound
+                    </a>
+
+                    <a href="prepare-scan.html">
+                        Scan Preparation
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column footer-contact">
+
+                    <h3>Contact</h3>
+
+                    <a href="#">
+
+                        <i data-lucide="map-pin"></i>
+
+                        <span>
+                            24 Health Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </span>
+
+                    </a>
+
+
+                    <a href="tel:+914445678900">
+
+                        <i data-lucide="phone"></i>
+
+                        <span>
+                            +91 44 4567 8900
+                        </span>
+
+                    </a>
+
+
+                    <a href="mailto:hello@clarityimaging.in">
+
+                        <i data-lucide="mail"></i>
+
+                        <span>
+                            hello@clarityimaging.in
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Clarity Imaging Center.
+                    All rights reserved.
+                </p>
+
+                <div>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms of Service
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         FLOATING ACTIONS
+    ====================================================== -->
+
+    <div class="fab-stack">
+
+        <button
+            class="fab fab-top"
+            id="backToTop"
+            type="button"
+            aria-label="Back to top"
+        >
+            <i data-lucide="arrow-up"></i>
+        </button>
+
+
+        <a
+            class="fab fab-call"
+            href="tel:+914445678900"
+            aria-label="Call Clarity Imaging Center"
+        >
+            <i data-lucide="phone"></i>
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         LOGIN MODAL
+    ====================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="loginModal"
+    >
+
+        <div class="auth-modal">
+
+            <button
+                class="modal-close"
+                type="button"
+            >
+                <i data-lucide="x"></i>
+            </button>
+
+
+            <div class="auth-icon">
+                <i data-lucide="lock-keyhole"></i>
+            </div>
+
+            <span class="auth-label">
+                Patient Portal
+            </span>
+
+            <h2>
+                Welcome back
+            </h2>
+
+            <p>
+                Login to manage your appointments and patient information.
+            </p>
+
+
+            <form class="auth-form">
+
+                <label>
+                    Email Address
+
+                    <input
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Password
+
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary full-btn"
+                >
+                    Login
+                    <i data-lucide="arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Don't have an account?
+
+                <button
+                    type="button"
+                    data-modal="signupModal"
+                >
+                    Create one
+                </button>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SIGNUP MODAL
+    ====================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="signupModal"
+    >
+
+        <div class="auth-modal">
+
+            <button
+                class="modal-close"
+                type="button"
+            >
+                <i data-lucide="x"></i>
+            </button>
+
+
+            <div class="auth-icon">
+                <i data-lucide="user-plus"></i>
+            </div>
+
+            <span class="auth-label">
+                Patient Portal
+            </span>
+
+            <h2>
+                Create your account
+            </h2>
+
+            <p>
+                Create a patient account for easier appointment management.
+            </p>
+
+
+            <form class="auth-form">
+
+                <label>
+                    Full Name
+
+                    <input
+                        type="text"
+                        placeholder="Your full name"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Email Address
+
+                    <input
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Password
+
+                    <input
+                        type="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary full-btn"
+                >
+                    Create Account
+                    <i data-lucide="arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    data-modal="loginModal"
+                >
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/services.js"></script>
+
+</body>
+
+</html>
