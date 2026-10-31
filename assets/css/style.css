@@ -155,9 +155,9 @@ ul {
 ========================================================= */
 
 .container {
-  width: min(calc(100% - 48px), var(--container));
-
+  width: min(calc(100% - clamp(56px, 7vw, 120px)), var(--container));
   margin-inline: auto;
+  box-sizing: border-box;
 }
 
 /* =========================================================

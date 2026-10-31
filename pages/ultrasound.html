@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4D HD Ultrasound and Color Doppler at Clarity Imaging Center. Radiation-free diagnostic sonography, obstetric anomaly scanning, vascular duplex mapping, and certified radiologists.">
+
+    <title>4D HD Ultrasound & Doppler | Clarity Imaging Center</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Font Awesome Brands -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/service-detail.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+    <div class="page-loader" id="pageLoader" aria-label="Loading">
+        <div class="loader-ring"></div>
+        <span>CLARITY</span>
+    </div>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+
+            <!-- LOGO -->
+            <a href="../index.html" class="logo" aria-label="Clarity Imaging Center Home">
+                <span class="logo-mark">
+                    <img src="../assets/images/heartbeat-svgrepo-com.svg" alt="Clarity Imaging Center">
+                </span>
+                <span class="logo-text">
+                    <strong>CLARITY</strong>
+                    <small>IMAGING CENTER</small>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="../index.html">Home</a>
+                <a href="home2.html">Home 2</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Header Controls -->
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i data-lucide="moon"></i>
+                </button>
+
+                <button class="icon-btn rtl-btn" id="rtlToggle" type="button" aria-label="Toggle RTL">
+                    <span>RTL</span>
+                </button>
+
+                <a href="contact.html?service=Ultrasound" class="btn btn-primary header-cta">
+                    Book / Enquire
+                </a>
+
+                <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="../index.html">Home</a>
+            <a href="home2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html?service=Ultrasound" class="mobile-appointment">
+                Book / Enquire
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =====================================================
+             1. HERO SECTION WITH CLINICAL SCANNER DISPLAY
+        ====================================================== -->
+        <section class="service-hero">
+            <div class="container service-hero-inner">
+
+                <div class="service-hero-copy">
+                    <div class="hero-badge-pill">
+                        <i data-lucide="waves"></i>
+                        <span>4D HD Real-Time Diagnostic Sonography</span>
+                    </div>
+
+                    <h1>
+                        Gentle, radiation-free care.
+                        <span>Crystal-clear sonograms.</span>
+                    </h1>
+
+                    <p>
+                        High-definition ultrasound and Color Doppler examinations utilizing single-crystal matrix acoustic probes. Delivering superior hemodynamics, fetal anomaly detection, and soft-tissue evaluation in a warm, comfortable environment.
+                    </p>
+
+                    <div class="service-hero-actions">
+                        <a href="contact.html?service=Ultrasound" class="btn btn-primary">
+                            <i data-lucide="calendar-check"></i>
+                            Schedule Ultrasound
+                        </a>
+                        <a href="#overview" class="btn btn-secondary">
+                            Explore Doppler Features
+                            <i data-lucide="arrow-down"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-trust-badges">
+                        <div class="trust-badge-item">
+                            <i data-lucide="shield-check"></i>
+                            <span>100% Safe For Pregnancy</span>
+                        </div>
+                        <div class="trust-badge-item">
+                            <i data-lucide="heart"></i>
+                            <span>Color Flow & Spectral Doppler</span>
+                        </div>
+                        <div class="trust-badge-item">
+                            <i data-lucide="sparkles"></i>
+                            <span>Temperature-Warmed Coupling Gel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Showcase -->
+                <div class="service-hero-visual">
+                    <div class="scanner-display-card">
+                        <div class="scanner-display-topbar">
+                            <span>CLARITY HD ULTRASOUND SUITE</span>
+                            <div class="live-indicator">
+                                <span class="live-dot"></span>
+                                TRANSDUCER ACTIVE
+                            </div>
+                        </div>
+
+                        <div class="scanner-image-wrap">
+                            <img src="../assets/images/ultra.jpg" alt="High-Definition Ultrasound Imaging System at Clarity" class="scanner-hero-img">
+                            <div class="scanner-hud-overlay"></div>
+
+                            <div class="scanner-telemetry-strip">
+                                <div class="telemetry-cell">
+                                    <small>Harmonic Mode</small>
+                                    <strong>4D HD Live</strong>
+                                </div>
+                                <div class="telemetry-cell">
+                                    <small>Frequency</small>
+                                    <strong>1 – 18 MHz</strong>
+                                </div>
+                                <div class="telemetry-cell">
+                                    <small>Doppler Mode</small>
+                                    <strong>Directional PDI</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Metric Chips -->
+                    <div class="hero-floating-stat floating-stat-left">
+                        <div class="floating-stat-icon">
+                            <i data-lucide="activity"></i>
+                        </div>
+                        <div class="floating-stat-text">
+                            <small>Hemodynamics</small>
+                            <strong>Real-Time Velocity</strong>
+                        </div>
+                    </div>
+
+                    <div class="hero-floating-stat floating-stat-right">
+                        <div class="floating-stat-icon">
+                            <i data-lucide="smile"></i>
+                        </div>
+                        <div class="floating-stat-text">
+                            <small>Patient Comfort</small>
+                            <strong>Zero Discomfort</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             2. AT-A-GLANCE SPECS STRIP
+        ====================================================== -->
+        <section class="specs-strip-section">
+            <div class="container specs-strip-grid">
+
+                <div class="specs-strip-item">
+                    <div class="specs-strip-icon">
+                        <i data-lucide="timer"></i>
+                    </div>
+                    <div>
+                        <small>Average Scan Time</small>
+                        <strong>15 – 25 Minutes</strong>
+                    </div>
+                </div>
+
+                <div class="specs-strip-item">
+                    <div class="specs-strip-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <div>
+                        <small>Radiation Exposure</small>
+                        <strong>Zero (Acoustic Waves)</strong>
+                    </div>
+                </div>
+
+                <div class="specs-strip-item">
+                    <div class="specs-strip-icon">
+                        <i data-lucide="clipboard-list"></i>
+                    </div>
+                    <div>
+                        <small>Preparation Protocol</small>
+                        <strong>Organ Specific (Water/Fasting)</strong>
+                    </div>
+                </div>
+
+                <div class="specs-strip-item">
+                    <div class="specs-strip-icon">
+                        <i data-lucide="file-check"></i>
+                    </div>
+                    <div>
+                        <small>Report Turnaround</small>
+                        <strong>Immediate Radiologist Review</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             3. CLINICAL OVERVIEW & TECHNOLOGY
+        ====================================================== -->
+        <section class="service-overview-section" id="overview">
+            <div class="container service-overview-grid">
+
+                <div class="overview-media-wrap">
+                    <img src="../assets/images/Ultrasound.jpg" alt="Ultrasound examination suite with patient comfort design" class="overview-media-img">
+                    <div class="overview-badge-float">
+                        <small>REAL-TIME ACOUSTIC IMAGING</small>
+                        <strong>Single-Crystal Matrix Transducers & High Frame-Rate Color Doppler</strong>
+                    </div>
+                </div>
+
+                <div class="overview-copy">
+                    <span class="section-eyebrow">
+                        <i data-lucide="sparkles"></i>
+                        Advanced Sonographic Technology
+                    </span>
+                    <h2>
+                        Gentle diagnostics <span>with vivid tissue differentiation.</span>
+                    </h2>
+                    <p>
+                        Ultrasound uses harmless, high-frequency sound waves reflecting off internal anatomical boundaries to construct live real-time video feeds. With zero ionizing radiation, it is the method of choice for prenatal monitoring, abdominal pain triage, and vascular blood flow quantification.
+                    </p>
+
+                    <div class="overview-benefits-list">
+                        <div class="benefit-bullet">
+                            <i data-lucide="check-circle-2"></i>
+                            <div>
+                                <strong>High-Definition 4D Fetal Visualization</strong>
+                                <span>Advanced surface rendering software creates photorealistic dynamic views of developing fetal facial features and skeletal movements.</span>
+                            </div>
+                        </div>
+
+                        <div class="benefit-bullet">
+                            <i data-lucide="check-circle-2"></i>
+                            <div>
+                                <strong>Vascular Hemodynamics & Waveform Analysis</strong>
+                                <span>Pulse-wave Doppler quantifies peak systolic velocity, resistive indices, and identifies peripheral or carotid arterial stenosis.</span>
+                            </div>
+                        </div>
+
+                        <div class="benefit-bullet">
+                            <i data-lucide="check-circle-2"></i>
+                            <div>
+                                <strong>Shear-Wave Elastography Tissue Stiffness</strong>
+                                <span>Non-invasive liver fibrosis staging and thyroid/breast nodule characterization without requiring surgical biopsy needles.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             4. CLINICAL EXAMINATIONS / ANATOMY GRID
+        ====================================================== -->
+        <section class="examinations-section">
+            <div class="container">
+
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">
+                        <i data-lucide="layout-grid"></i>
+                        Sonographic Services
+                    </span>
+                    <h2>Comprehensive Ultrasound <span>Examinations</span></h2>
+                    <p>Precision diagnostic protocols conducted by board-certified radiologists in private, tranquil suites.</p>
+                </div>
+
+                <div class="examinations-grid">
+
+                    <article class="exam-card">
+                        <div class="exam-card-header">
+                            <div class="exam-icon">
+                                <i data-lucide="heart-handshake"></i>
+                            </div>
+                            <span class="exam-num">01</span>
+                        </div>
+                        <h3>Obstetric 3D/4D & Anomaly Scans</h3>
+                        <p>Complete trimester fetal scans including First Trimester NT, Mid-Trimester Targeted Anomaly, and Fetal Doppler.</p>
+                        <div class="exam-bullets">
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>Targeted Anomaly Scan (TIFFA)</span>
+                            </div>
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>Uterine & Umbilical Doppler</span>
+                            </div>
+                        </div>
+                        <a href="contact.html?service=Ultrasound&type=Obstetric" class="btn btn-secondary">Book Protocol</a>
+                    </article>
+
+                    <article class="exam-card">
+                        <div class="exam-card-header">
+                            <div class="exam-icon">
+                                <i data-lucide="activity"></i>
+                            </div>
+                            <span class="exam-num">02</span>
+                        </div>
+                        <h3>Abdomen & Pelvis Sonography</h3>
+                        <p>Detailed evaluation of liver parenchymal texture, gallstones, kidneys, urinary bladder, pancreas, and pelvic organs.</p>
+                        <div class="exam-bullets">
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>Gallbladder & Renal Calculus</span>
+                            </div>
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>Fatty Liver Grading</span>
+                            </div>
+                        </div>
+                        <a href="contact.html?service=Ultrasound&type=Abdomen" class="btn btn-secondary">Book Protocol</a>
+                    </article>
+
+                    <article class="exam-card">
+                        <div class="exam-card-header">
+                            <div class="exam-icon">
+                                <i data-lucide="git-merge"></i>
+                            </div>
+                            <span class="exam-num">03</span>
+                        </div>
+                        <h3>Color Doppler & Vascular Duplex</h3>
+                        <p>Carotid Doppler for stroke risk, upper and lower limb arterial/venous duplex for DVT and varicose vein mapping.</p>
+                        <div class="exam-bullets">
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>Deep Vein Thrombosis (DVT) Rule-Out</span>
+                            </div>
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>Carotid Artery Plaque Mapping</span>
+                            </div>
+                        </div>
+                        <a href="contact.html?service=Ultrasound&type=Doppler" class="btn btn-secondary">Book Protocol</a>
+                    </article>
+
+                    <article class="exam-card">
+                        <div class="exam-card-header">
+                            <div class="exam-icon">
+                                <i data-lucide="sparkle"></i>
+                            </div>
+                            <span class="exam-num">04</span>
+                        </div>
+                        <h3>Small Parts (Thyroid, Breast, Scrotal)</h3>
+                        <p>Ultra-high-frequency (18 MHz) superficial imaging for thyroid nodules, breast cysts, salivary glands, and scrotal Doppler.</p>
+                        <div class="exam-bullets">
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>TI-RADS & BI-RADS Staging</span>
+                            </div>
+                            <div class="exam-bullet-item">
+                                <i data-lucide="check"></i>
+                                <span>High-Resolution Surface Coils</span>
+                            </div>
+                        </div>
+                        <a href="contact.html?service=Ultrasound&type=SmallParts" class="btn btn-secondary">Book Protocol</a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             5. PATIENT JOURNEY / PROCEDURE STEPS
+        ====================================================== -->
+        <section class="patient-journey-section">
+            <div class="container">
+
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">
+                        <i data-lucide="route"></i>
+                        Clinical Workflow
+                    </span>
+                    <h2>Your Ultrasound Experience, <span>Step-by-Step</span></h2>
+                    <p>Designed around comfort, privacy, and immediate clinical feedback.</p>
+                </div>
+
+                <div class="journey-steps-grid">
+
+                    <div class="journey-step-card">
+                        <span class="step-card-num">01</span>
+                        <div class="step-icon-wrap">
+                            <i data-lucide="clipboard-check"></i>
+                        </div>
+                        <h3>Preparation Check</h3>
+                        <p>We confirm that hydration or fasting protocols have been followed depending on whether your scan is pelvic or abdominal.</p>
+                    </div>
+
+                    <div class="journey-step-card">
+                        <span class="step-card-num">02</span>
+                        <div class="step-icon-wrap">
+                            <i data-lucide="bed"></i>
+                        </div>
+                        <h3>Warm Gel Application</h3>
+                        <p>You relax comfortably on our examination couch. Our sonologist applies warm, hypoallergenic acoustic gel to eliminate air gaps.</p>
+                    </div>
+
+                    <div class="journey-step-card">
+                        <span class="step-card-num">03</span>
+                        <div class="step-icon-wrap">
+                            <i data-lucide="waves"></i>
+                        </div>
+                        <h3>Dynamic Probe Guidance</h3>
+                        <p>The transducer is gently guided across the region while images and Color Doppler sounds are observed in real time on our HD monitor.</p>
+                    </div>
+
+                    <div class="journey-step-card">
+                        <span class="step-card-num">04</span>
+                        <div class="step-icon-wrap">
+                            <i data-lucide="file-badge"></i>
+                        </div>
+                        <h3>Immediate Verification</h3>
+                        <p>Our consultant radiologist discusses key impressions with you. Printed photo sheets and digital reports are handed over right after.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             6. PREPARATION & SAFETY GUIDELINES
+        ====================================================== -->
+        <section class="prep-safety-section">
+            <div class="container prep-safety-grid">
+
+                <div class="prep-instructions-card">
+                    <span class="section-eyebrow">Preparation Checklist</span>
+                    <h2>How to prepare for <span>your ultrasound</span></h2>
+                    <p>Preparation varies depending on the specific organ being examined:</p>
+
+                    <div class="prep-items-list">
+                        <div class="prep-checklist-card">
+                            <div class="prep-card-badge">1</div>
+                            <div class="prep-card-content">
+                                <strong>Upper Abdomen Scans: 6 Hours Fasting</strong>
+                                <p>Refrain from eating or drinking tea/coffee for 6 hours prior to allow optimal gall bladder distension and minimize bowel gas.</p>
+                            </div>
+                        </div>
+
+                        <div class="prep-checklist-card">
+                            <div class="prep-card-badge">2</div>
+                            <div class="prep-card-content">
+                                <strong>Pelvic & Obstetric Scans: Full Bladder Protocol</strong>
+                                <p>Drink 4 to 5 glasses of plain water 1 hour prior to your examination and do not urinate. A full bladder acts as an acoustic window.</p>
+                            </div>
+                        </div>
+
+                        <div class="prep-checklist-card">
+                            <div class="prep-card-badge">3</div>
+                            <div class="prep-card-content">
+                                <strong>Thyroid, Scrotal & Doppler: Zero Fasting Needed</strong>
+                                <p>Vascular Doppler and superficial soft tissue scans require no dietary restrictions or special fluid preparation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="safety-highlight-card">
+                    <div>
+                        <div class="safety-card-top">
+                            <div class="safety-shield-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <div>
+                                <small style="color: #67cbd0; font-weight: 800; letter-spacing: 0.1em;">SAFETY ASSURANCE</small>
+                                <h4 style="margin: 2px 0 0; color: #ffffff; font-size: 16px;">100% Non-Ionizing Sound</h4>
+                            </div>
+                        </div>
+
+                        <h3>Complete Peace of Mind</h3>
+                        <p>Ultrasound uses mechanical acoustic energy that has no documented adverse biological effects. It is completely safe for repeated evaluations during all trimesters of pregnancy and for newborn infants.</p>
+
+                        <div class="safety-points">
+                            <div class="safety-point">
+                                <i data-lucide="check"></i>
+                                <span>Zero Ionizing Radiation Standard</span>
+                            </div>
+                            <div class="safety-point">
+                                <i data-lucide="check"></i>
+                                <span>Fetal Medicine Foundation (FMF) Certified Protocols</span>
+                            </div>
+                            <div class="safety-point">
+                                <i data-lucide="check"></i>
+                                <span>Private Suites with Female Attendants Available</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html?service=Ultrasound" class="btn btn-primary">
+                        Schedule Sonography
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             7. FAQ ACCORDION SECTION
+        ====================================================== -->
+        <section class="service-faq-section">
+            <div class="container faq-layout-split">
+
+                <div class="faq-sidebar">
+                    <span class="section-eyebrow">Common Questions</span>
+                    <h2>Frequently Asked <span>Ultrasound Questions</span></h2>
+                    <p>Have questions regarding ultrasound preparation, 4D scans, or Doppler findings? Find direct answers below.</p>
+
+                    <div class="faq-sidebar-cta">
+                        <strong>Expectant mother or referral question?</strong>
+                        <p>Our friendly diagnostic coordinators are here to assist with appointment slots and preparation directions.</p>
+                        <a href="contact.html" class="btn btn-secondary">Contact Desk</a>
+                    </div>
+                </div>
+
+                <div class="faq-accordion-list">
+
+                    <div class="faq-accordion-item open">
+                        <button class="faq-toggle-btn" type="button">
+                            <span>Is an ultrasound scan safe during early pregnancy?</span>
+                            <i data-lucide="plus"></i>
+                        </button>
+                        <div class="faq-panel-content">
+                            Yes, absolutely. Diagnostic ultrasound uses harmless acoustic waves with zero ionizing radiation. It has been used safely for over five decades in obstetrics to monitor fetal growth, heartbeat, and placental position.
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-toggle-btn" type="button">
+                            <span>Why must my bladder be full for a pelvic scan?</span>
+                            <i data-lucide="plus"></i>
+                        </button>
+                        <div class="faq-panel-content">
+                            A distended urinary bladder pushes gas-filled bowel loops upward out of the pelvis and acts as an "acoustic window", allowing sound waves to clearly reach the uterus, ovaries, or prostate gland behind it.
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-toggle-btn" type="button">
+                            <span>What is the difference between 2D, 3D, and 4D ultrasound?</span>
+                            <i data-lucide="plus"></i>
+                        </button>
+                        <div class="faq-panel-content">
+                            A standard 2D scan captures flat black-and-white cross-sections used for diagnostic measurements. A 3D scan reconstructs static volume images with realistic surface depth. A 4D scan adds real-time motion, allowing parents to see fetal movements live.
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-toggle-btn" type="button">
+                            <span>What does Color Doppler evaluate?</span>
+                            <i data-lucide="plus"></i>
+                        </button>
+                        <div class="faq-panel-content">
+                            Color Doppler uses frequency shifts to measure the direction and speed of blood flowing through vessels. It is essential for detecting deep vein thrombosis (DVT), carotid arterial narrowing, and evaluating fetal umbilical blood flow.
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-toggle-btn" type="button">
+                            <span>How soon will I receive my ultrasound report and images?</span>
+                            <i data-lucide="plus"></i>
+                        </button>
+                        <div class="faq-panel-content">
+                            In most cases, your printed sonogram sheets and signed medical report are handed to you immediately after the examination, with digital copies sent via secure WhatsApp or email.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             8. FINAL APPOINTMENT CTA BANNER
+        ====================================================== -->
+        <section class="service-final-cta-section">
+            <div class="container">
+                <div class="final-cta-card">
+                    <div class="final-cta-copy">
+                        <span class="section-eyebrow">Warm, Gentle Care</span>
+                        <h2>Book your 4D HD Ultrasound <span>with Clarity today.</span></h2>
+                        <p>Enjoy prompt appointments, compassionate certified radiologists, and zero radiation sonography in tranquil private rooms.</p>
+                    </div>
+
+                    <div class="final-cta-actions">
+                        <a href="contact.html?service=Ultrasound" class="btn btn-primary">
+                            <i data-lucide="calendar-plus"></i>
+                            Book Ultrasound Appointment
+                        </a>
+
+                        <a href="tel:+914412345678" class="final-cta-phone">
+                            <i data-lucide="phone-call"></i>
+                            <div>
+                                <small>DIRECT HELPLINE</small>
+                                +91 44 1234 5678
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo footer-logo">
+                        <span class="logo-mark">
+                            <img src="../assets/images/heartbeat-svgrepo-com.svg" alt="Clarity Imaging Center">
+                        </span>
+                        <span class="logo-text">
+                            <strong>CLARITY</strong>
+                            <small>IMAGING CENTER</small>
+                        </span>
+                    </a>
+                    <p>
+                        Advanced diagnostic imaging delivered with precision, compassion and a patient-first approach.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick links -->
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="blog.html">Health Insights</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+                    <h3>Imaging</h3>
+                    <a href="mri.html">MRI Imaging</a>
+                    <a href="ct-scan.html">CT Scan</a>
+                    <a href="ultrasound.html">Ultrasound</a>
+                    <a href="contact.html?service=General">Scan Preparation</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+                    <a href="contact.html">
+                        <i data-lucide="map-pin"></i>
+                        <span>24 Health Avenue,<br>Chennai, Tamil Nadu</span>
+                    </a>
+                    <a href="tel:+914445678900">
+                        <i data-lucide="phone"></i>
+                        <span>+91 44 4567 8900</span>
+                    </a>
+                    <a href="mailto:hello@clarityimaging.in">
+                        <i data-lucide="mail"></i>
+                        <span>hello@clarityimaging.in</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Clarity Imaging Center. All rights reserved.</p>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/service-detail.js"></script>
+
+</body>
+</html>
+

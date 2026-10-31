@@ -1,0 +1,1390 @@
+/* =========================================================
+   CLARITY IMAGING CENTER
+   SERVICE DETAILS STYLESHEET (MRI, CT SCAN, ULTRASOUND)
+========================================================= */
+
+:root {
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --glow-cyan: rgba(8, 127, 140, 0.25);
+}
+
+/* =========================================================
+   CONTAINER & START/END GUTTER SPACING
+========================================================= */
+
+.container {
+    width: min(calc(100% - clamp(56px, 7vw, 120px)), 1220px) !important;
+    margin-inline: auto !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: min(calc(100% - 40px), 100%) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: min(calc(100% - 24px), 100%) !important;
+    }
+}
+
+/* =========================================================
+   1. SERVICE HERO SECTION
+========================================================= */
+
+.service-hero {
+    position: relative;
+    padding: clamp(144px, 11vh, 168px) 0 clamp(75px, 8vh, 96px);
+    background:
+        radial-gradient(circle at 85% 25%, rgba(8, 127, 140, 0.12), transparent 45%),
+        radial-gradient(circle at 15% 75%, rgba(103, 203, 208, 0.08), transparent 40%),
+        var(--bg);
+    overflow: hidden;
+}
+
+.service-hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    align-items: center;
+    gap: clamp(40px, 4.8vw, 64px);
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.service-hero-copy {
+    max-width: 620px;
+}
+
+.hero-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 16px;
+    border-radius: 99px;
+    border: 1px solid rgba(8, 127, 140, 0.25);
+    background: var(--surface);
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 14px rgba(8, 127, 140, 0.08);
+}
+
+.hero-badge-pill svg {
+    width: 14px;
+    height: 14px;
+}
+
+.service-hero h1 {
+    margin-top: 18px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(34px, 4vw, 56px);
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    color: var(--text);
+}
+
+.service-hero h1 span {
+    color: var(--primary);
+    display: block;
+    margin-top: 4px;
+}
+
+.service-hero-copy > p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text-light);
+    max-width: 560px;
+}
+
+.service-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.service-hero-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(14px, 2vw, 24px);
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+.trust-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.trust-badge-item svg {
+    width: 17px;
+    height: 17px;
+    color: var(--primary);
+}
+
+/* Hero Scanner Console Showcase */
+.service-hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    margin-left: auto;
+}
+
+.scanner-display-card {
+    position: relative;
+    border-radius: var(--radius-container, 26px);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(8, 127, 140, 0.12);
+}
+
+.scanner-display-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: #09202a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.scanner-display-topbar .live-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #67cbd0;
+}
+
+.scanner-display-topbar .live-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #67cbd0;
+    box-shadow: 0 0 10px #67cbd0;
+    animation: livePulse 1.8s infinite;
+}
+
+@keyframes livePulse {
+    50% { opacity: 0.4; }
+}
+
+.scanner-image-wrap {
+    position: relative;
+    height: 350px;
+    background: #09202a;
+    overflow: hidden;
+}
+
+.scanner-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s var(--ease-out);
+}
+
+.scanner-display-card:hover .scanner-hero-img {
+    transform: scale(1.03);
+}
+
+.scanner-hud-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(4, 18, 25, 0.15) 0%, rgba(4, 18, 25, 0.75) 100%);
+    pointer-events: none;
+}
+
+.scanner-telemetry-strip {
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+    right: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    z-index: 2;
+}
+
+.telemetry-cell {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(8, 26, 35, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(103, 203, 208, 0.3);
+}
+
+.telemetry-cell small {
+    display: block;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #67cbd0;
+    text-transform: uppercase;
+}
+
+.telemetry-cell strong {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Floating Status Pills */
+.hero-floating-stat {
+    position: absolute;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: var(--radius-icon, 12px);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(12px);
+}
+
+body.dark-theme .hero-floating-stat {
+    background: rgba(16, 40, 51, 0.95);
+    border-color: rgba(103, 203, 208, 0.35);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.floating-stat-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.floating-stat-icon svg {
+    width: 15px;
+    height: 15px;
+}
+
+.floating-stat-text small {
+    display: block;
+    font-size: 8.5px;
+    font-weight: 800;
+    color: var(--text-light);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+body.dark-theme .floating-stat-text small {
+    color: #67cbd0;
+}
+
+.floating-stat-text strong {
+    display: block;
+    margin-top: 1px;
+    font-size: 11.5px;
+    color: var(--text);
+    font-weight: 800;
+}
+
+body.dark-theme .floating-stat-text strong {
+    color: #ffffff;
+}
+
+.floating-stat-left {
+    left: 16px;
+    top: 54px;
+    animation: floatStat 4.5s ease-in-out infinite;
+}
+
+.floating-stat-right {
+    right: 16px;
+    bottom: 82px;
+    animation: floatStat 4.5s ease-in-out infinite;
+    animation-delay: -2.25s;
+}
+
+@keyframes floatStat {
+    50% { transform: translateY(-7px); }
+}
+
+
+/* =========================================================
+   2. AT-A-GLANCE SPECS BAR
+========================================================= */
+
+.specs-strip-section {
+    background: var(--surface-soft);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0;
+}
+
+.specs-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+.specs-strip-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border-radius: var(--radius-card, 16px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.specs-strip-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.specs-strip-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.specs-strip-item small {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--text-light);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.specs-strip-item strong {
+    display: block;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+
+/* =========================================================
+   3. CLINICAL OVERVIEW (SPLIT SECTION)
+========================================================= */
+
+.service-overview-section {
+    padding: 80px 0;
+    background: var(--bg);
+}
+
+.service-overview-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 48px;
+    align-items: center;
+    width: 100%;
+}
+
+.overview-media-wrap {
+    position: relative;
+    border-radius: var(--radius-container, 26px);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    height: 440px;
+    background: #09202a;
+}
+
+.overview-media-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s var(--ease-out);
+}
+
+.overview-media-wrap:hover .overview-media-img {
+    transform: scale(1.04);
+}
+
+.overview-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: rgba(8, 26, 35, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(103, 203, 208, 0.3);
+    color: #ffffff;
+}
+
+.overview-badge-float small {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #67cbd0;
+    text-transform: uppercase;
+}
+
+.overview-badge-float strong {
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.overview-copy .section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.overview-copy h2 {
+    margin-top: 14px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(30px, 3.6vw, 44px);
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+    color: var(--text);
+}
+
+.overview-copy h2 span {
+    color: var(--primary);
+}
+
+.overview-copy > p {
+    margin-top: 16px;
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.overview-benefits-list {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.benefit-bullet {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.benefit-bullet svg {
+    width: 18px;
+    height: 18px;
+    color: var(--primary);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.benefit-bullet strong {
+    display: block;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.benefit-bullet span {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   4. CLINICAL EXAMINATIONS / ANATOMY GRID
+========================================================= */
+
+.examinations-section {
+    padding: 80px 0;
+    background: var(--surface-soft);
+}
+
+.section-title-wrap {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-title-wrap .section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.section-title-wrap h2 {
+    margin-top: 12px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(28px, 3.4vw, 42px);
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: var(--text);
+}
+
+.section-title-wrap h2 span {
+    color: var(--primary);
+}
+
+.section-title-wrap p {
+    margin-top: 12px;
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.examinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+.exam-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 24px 20px;
+    border-radius: var(--radius-card, 18px);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.35s var(--ease-out), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.exam-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.exam-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: grid;
+    place-items: center;
+}
+
+.exam-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.exam-num {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgba(8, 127, 140, 0.3);
+}
+
+.exam-card h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    min-height: 44px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.exam-card > p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.55;
+    min-height: 58px;
+}
+
+.exam-bullets {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.exam-bullet-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.exam-bullet-item svg {
+    width: 14px;
+    height: 14px;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.exam-card .btn {
+    margin-top: auto;
+    padding-top: 14px;
+    width: 100%;
+    justify-content: center;
+    font-size: 12.5px;
+    padding: 9px 14px;
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   5. PATIENT JOURNEY / PROCEDURE STEPS
+========================================================= */
+
+.patient-journey-section {
+    padding: 80px 0;
+    background: var(--bg);
+}
+
+.journey-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 45px;
+    width: 100%;
+}
+
+.journey-step-card {
+    position: relative;
+    padding: 24px 20px;
+    border-radius: var(--radius-card, 18px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.step-card-num {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(8, 127, 140, 0.25);
+}
+
+.step-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px;
+}
+
+.step-icon-wrap svg {
+    width: 22px;
+    height: 22px;
+}
+
+.journey-step-card h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.journey-step-card p {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   6. PREPARATION & SAFETY GUIDELINES
+========================================================= */
+
+.prep-safety-section {
+    padding: 80px 0;
+    background: var(--surface-soft);
+    position: relative;
+    clear: both;
+}
+
+.prep-safety-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 36px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.prep-instructions-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    padding: 36px 32px;
+    border-radius: var(--radius-container, 24px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    box-sizing: border-box;
+}
+
+.prep-instructions-card .section-eyebrow {
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.prep-instructions-card h2 {
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(26px, 3.2vw, 36px);
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.prep-instructions-card h2 span {
+    color: var(--primary);
+}
+
+.prep-instructions-card > p {
+    margin-top: 10px;
+    color: var(--text-light);
+    font-size: 14.5px;
+    line-height: 1.65;
+}
+
+.prep-items-list {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.prep-checklist-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+}
+
+.prep-card-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: var(--white);
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.prep-card-content strong {
+    display: block;
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.prep-card-content p {
+    margin-top: 3px;
+    font-size: 12.5px;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* Safety Side Card */
+.safety-highlight-card {
+    padding: 36px 32px;
+    border-radius: var(--radius-container, 24px);
+    background: linear-gradient(145deg, #061922 0%, #0d2a37 100%);
+    border: 1px solid rgba(103, 203, 208, 0.25);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow-md);
+}
+
+.safety-card-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.safety-shield-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(8, 127, 140, 0.25);
+    border: 1px solid rgba(103, 203, 208, 0.4);
+    color: #67cbd0;
+    display: grid;
+    place-items: center;
+}
+
+.safety-shield-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.safety-highlight-card h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.safety-highlight-card p {
+    margin-top: 10px;
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.safety-points {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.safety-point {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #e6f7f8;
+}
+
+.safety-point svg {
+    width: 15px;
+    height: 15px;
+    color: #67cbd0;
+    flex-shrink: 0;
+}
+
+.safety-highlight-card .btn {
+    margin-top: 28px;
+    width: 100%;
+    justify-content: center;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+}
+
+
+/* =========================================================
+   7. FAQ ACCORDION SECTION
+========================================================= */
+
+.service-faq-section {
+    padding: 80px 0;
+    background: var(--bg);
+}
+
+.faq-layout-split {
+    display: grid;
+    grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+    gap: 48px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.faq-sidebar .section-eyebrow {
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.faq-sidebar h2 {
+    margin-top: 12px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(28px, 3.4vw, 40px);
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.faq-sidebar h2 span {
+    color: var(--primary);
+}
+
+.faq-sidebar p {
+    margin-top: 14px;
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.faq-sidebar-cta {
+    margin-top: 28px;
+    padding: 24px;
+    border-radius: var(--radius-card, 18px);
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+}
+
+.faq-sidebar-cta strong {
+    display: block;
+    font-size: 14.5px;
+    color: var(--text);
+}
+
+.faq-sidebar-cta p {
+    margin-top: 6px;
+    font-size: 12.5px;
+    color: var(--text-light);
+}
+
+.faq-sidebar-cta .btn {
+    margin-top: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Accordion Items */
+.faq-accordion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.faq-accordion-item {
+    border-radius: var(--radius-card, 16px);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    overflow: hidden;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.faq-accordion-item:hover {
+    border-color: rgba(8, 127, 140, 0.35);
+}
+
+.faq-accordion-item.open {
+    border-color: var(--primary);
+    box-shadow: 0 6px 20px rgba(8, 127, 140, 0.08);
+}
+
+.faq-toggle-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    transition: color 0.2s ease;
+}
+
+.faq-toggle-btn svg {
+    width: 18px;
+    height: 18px;
+    color: var(--primary);
+    flex-shrink: 0;
+    transition: transform 0.3s var(--ease-out);
+}
+
+.faq-accordion-item.open .faq-toggle-btn svg {
+    transform: rotate(45deg);
+}
+
+.faq-panel-content {
+    display: none;
+    padding: 0 24px 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.faq-accordion-item.open .faq-panel-content {
+    display: block;
+}
+
+
+/* =========================================================
+   8. FINAL APPOINTMENT CTA BANNER
+========================================================= */
+
+.service-final-cta-section {
+    padding: 50px 0 85px;
+    background: var(--bg);
+}
+
+.final-cta-card {
+    position: relative;
+    padding: 48px 56px;
+    border-radius: var(--radius-container, 28px);
+    background:
+        radial-gradient(circle at 90% 20%, rgba(103, 203, 208, 0.2), transparent 50%),
+        linear-gradient(135deg, #051a23 0%, #082d3b 100%);
+    border: 1px solid rgba(103, 203, 208, 0.3);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 30px 80px rgba(4, 18, 25, 0.35);
+}
+
+.final-cta-copy {
+    max-width: 620px;
+}
+
+.final-cta-copy .section-eyebrow {
+    color: #67cbd0;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.final-cta-copy h2 {
+    margin-top: 10px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(30px, 3.6vw, 44px);
+    line-height: 1.15;
+    color: #ffffff;
+}
+
+.final-cta-copy h2 span {
+    color: #67cbd0;
+}
+
+.final-cta-copy p {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.final-cta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.final-cta-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.final-cta-phone svg {
+    width: 18px;
+    height: 18px;
+    color: #67cbd0;
+}
+
+.final-cta-phone small {
+    display: block;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.06em;
+}
+
+
+/* =========================================================
+   9. RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .service-hero-inner {
+    direction: rtl;
+}
+
+html[dir="rtl"] .service-hero-copy,
+html[dir="rtl"] .overview-copy,
+html[dir="rtl"] .exam-card,
+html[dir="rtl"] .journey-step-card,
+html[dir="rtl"] .prep-instructions-card,
+html[dir="rtl"] .safety-highlight-card,
+html[dir="rtl"] .faq-sidebar,
+html[dir="rtl"] .faq-toggle-btn,
+html[dir="rtl"] .faq-panel-content,
+html[dir="rtl"] .final-cta-copy {
+    text-align: right;
+}
+
+html[dir="rtl"] .service-hero-visual {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+html[dir="rtl"] .floating-stat-left {
+    left: auto;
+    right: 16px;
+}
+
+html[dir="rtl"] .floating-stat-right {
+    right: auto;
+    left: 16px;
+}
+
+html[dir="rtl"] .step-card-num {
+    right: auto;
+    left: 20px;
+}
+
+html[dir="rtl"] .final-cta-actions {
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   10. RESPONSIVE BREAKPOINTS
+========================================================= */
+
+@media (max-width: 1024px) {
+    .service-hero-inner {
+        gap: 36px;
+    }
+
+    .scanner-image-wrap {
+        height: 310px;
+    }
+}
+
+@media (max-width: 991px) {
+    .service-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+
+    .service-hero-copy {
+        max-width: 100%;
+    }
+
+    .service-hero-visual {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .specs-strip-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .overview-media-wrap {
+        height: 340px;
+    }
+
+    .examinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .journey-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prep-safety-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .faq-layout-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .final-cta-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    .final-cta-actions {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .final-cta-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 125px 0 60px;
+    }
+
+    .service-hero h1 {
+        font-size: clamp(30px, 5.5vw, 38px);
+    }
+
+    .service-hero-copy > p {
+        font-size: 15.5px;
+    }
+
+    .floating-stat-left {
+        left: 12px;
+        top: 50px;
+    }
+
+    .floating-stat-right {
+        right: 12px;
+        bottom: 78px;
+    }
+}
+
+@media (max-width: 540px) {
+    .service-hero {
+        padding: 110px 0 50px;
+    }
+
+    .service-hero h1 {
+        font-size: clamp(26px, 7.5vw, 32px);
+    }
+
+    .service-hero-copy > p {
+        font-size: 14.5px;
+        margin-top: 14px;
+    }
+
+    .service-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .service-hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-trust-badges {
+        gap: 12px;
+        margin-top: 24px;
+        padding-top: 18px;
+    }
+
+    .hero-floating-stat {
+        display: none;
+    }
+
+    .scanner-image-wrap {
+        height: 240px;
+    }
+
+    .scanner-telemetry-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .telemetry-cell {
+        padding: 6px 10px;
+    }
+
+    .specs-strip-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .examinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prep-instructions-card,
+    .safety-highlight-card {
+        padding: 24px 20px;
+    }
+
+    .final-cta-card {
+        padding: 28px 20px;
+    }
+}
+

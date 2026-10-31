@@ -288,36 +288,28 @@
         <section class="services-hero">
 
             <div class="services-hero-bg">
-
                 <div class="hero-grid-pattern"></div>
-
                 <div class="hero-orbit orbit-one"></div>
                 <div class="hero-orbit orbit-two"></div>
-
             </div>
-
 
             <div class="container services-hero-content">
 
                 <div class="services-hero-copy reveal-left">
 
-                    <span class="eyebrow">
-                        <i data-lucide="scan-line"></i>
-                        DIAGNOSTIC IMAGING
-                    </span>
+                    <div class="hero-badge">
+                        <i data-lucide="shield-check"></i>
+                        <span>NABH & AERB ACCREDITED · HIGH-PRECISION DIAGNOSTIC SUITE</span>
+                    </div>
 
                     <h1>
-                        Imaging designed around
-                        <span>clarity.</span>
+                        Diagnostic Imaging Engineered For
+                        <span>Absolute Clarity.</span>
                     </h1>
 
                     <p>
-                        From advanced MRI and high-speed CT imaging
-                        to detailed ultrasound examinations, our
-                        diagnostic services combine modern technology
-                        with thoughtful patient care.
+                        Clarity Imaging Center pairs sub-millimeter 3.0T MRI, 128-Slice Low-Dose CT, and 4D High-Definition Ultrasound with compassionate, patient-first care. Dual board-certified radiologist reports delivered in under 24 hours.
                     </p>
-
 
                     <div class="services-hero-actions">
 
@@ -325,31 +317,41 @@
                             href="contact.html"
                             class="btn btn-primary"
                         >
-                            Book an Appointment
+                            Book a Scan Appointment
                             <i data-lucide="arrow-up-right"></i>
                         </a>
 
                         <a
-                            href="#services-grid"
+                            href="#services-catalog"
                             class="btn btn-secondary"
                         >
-                            Explore Services
+                            Explore All Modalities
                             <i data-lucide="arrow-down"></i>
                         </a>
 
                     </div>
 
+                    <!-- Trust Metrics Grid -->
+                    <div class="hero-stats-grid">
 
-                    <div class="hero-trust-row">
-
-                        <div class="trust-item">
-                            <i data-lucide="badge-check"></i>
-                            <span>Experienced imaging team</span>
+                        <div class="hero-stat-card">
+                            <strong>3.0T</strong>
+                            <span>Ultra High-Field MRI</span>
                         </div>
 
-                        <div class="trust-item">
-                            <i data-lucide="shield-check"></i>
-                            <span>Patient-first protocols</span>
+                        <div class="hero-stat-card">
+                            <strong>128-Slice</strong>
+                            <span>Sub-Sec Low Dose CT</span>
+                        </div>
+
+                        <div class="hero-stat-card">
+                            <strong>4D HD</strong>
+                            <span>Color Doppler Ultrasound</span>
+                        </div>
+
+                        <div class="hero-stat-card">
+                            <strong>&lt; 24h</strong>
+                            <span>Dual Radiologist Reports</span>
                         </div>
 
                     </div>
@@ -357,73 +359,72 @@
                 </div>
 
 
+                <!-- HERO DIAGNOSTIC CONSOLE -->
                 <div class="services-hero-visual reveal-right">
 
-                    <div class="scan-frame">
+                    <div class="clinical-console">
 
-                        <div class="scan-frame-corner top-left"></div>
-                        <div class="scan-frame-corner top-right"></div>
-                        <div class="scan-frame-corner bottom-left"></div>
-                        <div class="scan-frame-corner bottom-right"></div>
-
-
-                        <div class="scan-frame-header">
-
-                            <span>
-                                <i data-lucide="activity"></i>
-                                IMAGING SUITE
-                            </span>
-
-                            <span class="live-dot">
-                                LIVE
-                            </span>
-
+                        <div class="console-top-bar">
+                            <div class="console-status-pill">
+                                <span class="live-pulse-dot"></span>
+                                <span>SUITE 01 · ACTIVE</span>
+                            </div>
+                            <span class="console-modality-tag">3.0T MAGNETOM SPECTRA</span>
                         </div>
 
+                        <div class="console-viewport">
+                            <img
+                                src="../assets/images/MRIScan.jpg"
+                                alt="High Resolution MRI Diagnostic Suite"
+                                class="console-image"
+                            >
+                            <div class="console-hud-overlay"></div>
 
-                        <div class="scan-visual">
+                            <!-- Interactive Target Markers -->
+                            <div class="hud-marker marker-neuro" title="Neuro & Brain Imaging">
+                                <span class="marker-ping"></span>
+                                <span class="marker-label">NEURO · 0.2mm</span>
+                            </div>
 
-                            <div class="scan-circle circle-one"></div>
-                            <div class="scan-circle circle-two"></div>
-                            <div class="scan-circle circle-three"></div>
+                            <div class="hud-marker marker-spine" title="Spine & Disc Analysis">
+                                <span class="marker-ping"></span>
+                                <span class="marker-label">SPINE · T2-TSE</span>
+                            </div>
 
-                            <div class="scan-crosshair"></div>
-
-                            <div class="scan-pulse"></div>
-
+                            <div class="hud-marker marker-joint" title="Musculoskeletal Joint">
+                                <span class="marker-ping"></span>
+                                <span class="marker-label">MSK · 3D SPACE</span>
+                            </div>
                         </div>
 
-
-                        <div class="scan-frame-footer">
-
-                            <span>
-                                SYSTEM STATUS
-                            </span>
-
-                            <strong>
-                                READY
-                            </strong>
-
+                        <div class="console-telemetry-bar">
+                            <div class="telemetry-item">
+                                <small>DOSE / ACOUSTICS</small>
+                                <strong>QuietScan -80% Noise</strong>
+                            </div>
+                            <div class="telemetry-item">
+                                <small>CLINICAL VERIFICATION</small>
+                                <strong>Dual Read Certified</strong>
+                            </div>
                         </div>
 
-                    </div>
-
-
-                    <div class="floating-data data-one">
-                        <i data-lucide="radio"></i>
-                        <div>
-                            <small>PRECISION</small>
-                            <strong>High Resolution</strong>
+                        <!-- Floating Badges -->
+                        <div class="console-floating-badge badge-left">
+                            <i data-lucide="sparkles"></i>
+                            <div>
+                                <small>AI RECONSTRUCTION</small>
+                                <strong>Sub-Millimeter Precision</strong>
+                            </div>
                         </div>
-                    </div>
 
-
-                    <div class="floating-data data-two">
-                        <i data-lucide="clock-3"></i>
-                        <div>
-                            <small>WORKFLOW</small>
-                            <strong>Patient Focused</strong>
+                        <div class="console-floating-badge badge-right">
+                            <i data-lucide="clock-3"></i>
+                            <div>
+                                <small>TURNAROUND TIME</small>
+                                <strong>Same-Day PACS Reports</strong>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -434,368 +435,593 @@
 
 
         <!-- =================================================
-             INTRO
+             CATALOG FILTER BAR & INTRODUCTION
         ================================================== -->
 
-        <section class="services-intro section">
+        <section class="services-catalog-section section" id="services-catalog">
 
             <div class="container">
 
                 <div class="section-heading-centered section-heading centered reveal">
 
                     <span class="eyebrow">
-                        OUR CAPABILITIES
+                        <i data-lucide="scan-line"></i>
+                        OUR COMPREHENSIVE MODALITIES
                     </span>
 
                     <h2>
-                        The right scan for
-                        <span>the right question.</span>
+                        Specialized Imaging For
+                        <span>Every Clinical Need.</span>
                     </h2>
 
                     <p>
-                        Diagnostic imaging helps clinicians look beyond
-                        symptoms and understand what is happening inside
-                        the body. Each modality has a different purpose,
-                        and our team helps patients navigate the process
-                        with confidence.
+                        From rapid volumetric chest assessments to intricate soft-tissue and vascular mapping, our accredited diagnostic services combine cutting-edge technology with patient comfort.
                     </p>
 
                 </div>
 
 
-                <div class="service-principles">
+                <!-- Interactive Filter Tabs -->
+                <div class="catalog-filter-bar reveal">
 
-                    <article class="principle-card reveal">
+                    <button
+                        class="filter-pill active"
+                        data-filter="all"
+                        type="button"
+                    >
+                        <i data-lucide="layout-grid"></i>
+                        <span>All Modalities (6)</span>
+                    </button>
 
-                        <div class="principle-icon">
-                            <i data-lucide="crosshair"></i>
-                        </div>
+                    <button
+                        class="filter-pill"
+                        data-filter="mri"
+                        type="button"
+                    >
+                        <i data-lucide="scan"></i>
+                        <span>Magnetic Resonance (MRI)</span>
+                    </button>
 
-                        <div>
-                            <span>01</span>
-                            <h3>Purposeful Imaging</h3>
-                            <p>
-                                Every examination is selected according
-                                to the clinical question and patient need.
-                            </p>
-                        </div>
+                    <button
+                        class="filter-pill"
+                        data-filter="ct"
+                        type="button"
+                    >
+                        <i data-lucide="circle-dot"></i>
+                        <span>Computed Tomography (CT)</span>
+                    </button>
 
-                    </article>
+                    <button
+                        class="filter-pill"
+                        data-filter="ultrasound"
+                        type="button"
+                    >
+                        <i data-lucide="waves"></i>
+                        <span>Ultrasound & Doppler</span>
+                    </button>
 
-
-                    <article class="principle-card reveal">
-
-                        <div class="principle-icon">
-                            <i data-lucide="scan-search"></i>
-                        </div>
-
-                        <div>
-                            <span>02</span>
-                            <h3>Detailed Evaluation</h3>
-                            <p>
-                                Modern imaging technology supports clear
-                                and clinically useful diagnostic information.
-                            </p>
-                        </div>
-
-                    </article>
-
-
-                    <article class="principle-card reveal">
-
-                        <div class="principle-icon">
-                            <i data-lucide="heart-handshake"></i>
-                        </div>
-
-                        <div>
-                            <span>03</span>
-                            <h3>Human Care</h3>
-                            <p>
-                                We explain each step and create a calm,
-                                respectful experience for every patient.
-                            </p>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             SERVICES GRID
-        ================================================== -->
-
-        <section
-            class="services-grid-section section"
-            id="services-grid"
-        >
-
-            <div class="container">
-
-                <div class="section-heading reveal-left">
-
-                    <div>
-
-                        <span class="eyebrow">
-                            IMAGING SERVICES
-                        </span>
-
-                        <h2>
-                            Advanced technology.
-                            <span>Clearer answers.</span>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Explore our core diagnostic imaging services
-                        and understand what each examination is designed
-                        to help evaluate.
-                    </p>
+                    <button
+                        class="filter-pill"
+                        data-filter="screening"
+                        type="button"
+                    >
+                        <i data-lucide="activity"></i>
+                        <span>X-Ray & Screenings</span>
+                    </button>
 
                 </div>
 
 
-                <div class="service-feature-grid">
+                <!-- =============================================
+                     UNIFORM SERVICES SHOWCASE GRID (3-COLUMN)
+                ============================================== -->
 
+                <div class="services-bento-grid">
 
-                    <!-- MRI -->
+                    <!-- CARD 1: 3.0T MRI -->
+                    <article
+                        class="bento-service-card reveal"
+                        data-category="mri"
+                    >
 
-                    <article class="service-feature-card  reveal-left">
+                        <div class="card-media">
+                            <img
+                                src="../assets/images/MRIScan.jpg"
+                                alt="3.0T Magnetic Resonance Imaging"
+                                class="card-img"
+                            >
+                            <div class="card-media-overlay"></div>
 
-                        <div class="service-image mri-image">
-
-                            <div class="image-overlay"></div>
-
-                            <div class="service-number">
-                                01
+                            <div class="card-media-badge">
+                                <span class="modality-code">MRI</span>
+                                <span class="tag-label">HIGH-FIELD</span>
                             </div>
 
-                            <div class="service-image-label">
-                                <i data-lucide="scan"></i>
-                                MRI
+                            <div class="card-media-tags">
+                                <span class="media-tag">3.0 Tesla</span>
+                                <span class="media-tag">Zero Radiation</span>
                             </div>
-
                         </div>
 
+                        <div class="card-body">
 
-                        <div class="service-feature-content">
-
-                            <div class="service-card-top">
-
-                                <span class="service-tag">
-                                    MAGNETIC RESONANCE
-                                </span>
-
-                                <div class="service-icon">
+                            <div class="card-header-row">
+                                <span class="category-tag">MAGNETIC RESONANCE</span>
+                                <div class="card-icon-wrap">
                                     <i data-lucide="scan"></i>
                                 </div>
-
                             </div>
 
-                            <h3>
-                                MRI Imaging
-                            </h3>
+                            <h3>3.0T High-Field MRI Imaging</h3>
 
                             <p>
-                                Detailed imaging using magnetic fields
-                                and radio waves to visualize soft tissues,
-                                joints, the brain, spine and other areas
-                                of the body.
+                                Delivers double the signal clarity of standard scanners for brain, spine, and complex musculoskeletal cartilage evaluation.
                             </p>
 
-
-                            <div class="service-points">
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Soft tissue detail
-                                </span>
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Brain & spine imaging
-                                </span>
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Joint evaluation
-                                </span>
-
+                            <div class="card-applications-grid compact-grid">
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Neuro, Stroke & Vessel Diffusion</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Spine & Disc Degeneration Surveys</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Orthopedic & Musculoskeletal Tears</span>
+                                </div>
                             </div>
 
+                            <div class="card-specs-row">
+                                <span class="spec-chip">
+                                    <i data-lucide="clock"></i>
+                                    25 - 45m
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="maximize-2"></i>
+                                    70cm Bore
+                                </span>
+                                <span class="spec-chip highlight-chip">
+                                    <i data-lucide="shield"></i>
+                                    No Radiation
+                                </span>
+                            </div>
 
-                            <a
-                                href="mri.html"
-                                class="service-link"
-                            >
-                                Explore MRI
-                                <i data-lucide="arrow-up-right"></i>
-                            </a>
+                            <div class="card-actions-row">
+                                <a href="mri.html" class="btn btn-primary">
+                                    Explore MRI
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=MRI" class="btn btn-secondary">
+                                    Book Scan
+                                </a>
+                            </div>
 
                         </div>
 
                     </article>
 
 
-                    <!-- CT -->
+                    <!-- CARD 2: 128-SLICE CT SCAN -->
+                    <article
+                        class="bento-service-card reveal"
+                        data-category="ct"
+                    >
 
-                    <article class="service-feature-card reveal-right">
+                        <div class="card-media">
+                            <img
+                                src="../assets/images/ct.jpg"
+                                alt="128-Slice Computed Tomography Scan"
+                                class="card-img"
+                            >
+                            <div class="card-media-overlay"></div>
 
-                        <div class="service-image ct-image" style="background-image: url(../assets/images/ct.jpg);background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;">
-
-                            <div class="image-overlay"></div>
-
-                            <div class="service-number">
-                                02
+                            <div class="card-media-badge">
+                                <span class="modality-code">CT</span>
+                                <span class="tag-label">AI LOW DOSE</span>
                             </div>
 
-                            <div class="service-image-label">
-                                <i data-lucide="circle-dot"></i>
-                                CT
+                            <div class="card-media-tags">
+                                <span class="media-tag">128 Slices</span>
+                                <span class="media-tag">Sub-Second</span>
                             </div>
-
                         </div>
 
+                        <div class="card-body">
 
-                        <div class="service-feature-content">
-
-                            <div class="service-card-top">
-
-                                <span class="service-tag">
-                                    COMPUTED TOMOGRAPHY
-                                </span>
-
-                                <div class="service-icon">
+                            <div class="card-header-row">
+                                <span class="category-tag">COMPUTED TOMOGRAPHY</span>
+                                <div class="card-icon-wrap">
                                     <i data-lucide="circle-dot"></i>
                                 </div>
-
                             </div>
 
-                            <h3>
-                                CT Scan
-                            </h3>
+                            <h3>128-Slice Multidetector CT Scan</h3>
 
                             <p>
-                                Cross-sectional imaging that creates
-                                detailed views of internal structures
-                                and supports rapid diagnostic assessment.
+                                Captures sub-millimeter cross-sections in seconds with iterative algorithms that lower radiation dose by up to 80%.
                             </p>
 
-
-                            <div class="service-points">
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Rapid imaging
-                                </span>
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Chest & abdomen
-                                </span>
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Detailed cross-sections
-                                </span>
-
+                            <div class="card-applications-grid compact-grid">
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Low-Dose Chest & Lung Screenings</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Coronary Calcium & Angiography</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Acute Trauma & 3D Bone Imaging</span>
+                                </div>
                             </div>
 
+                            <div class="card-specs-row">
+                                <span class="spec-chip">
+                                    <i data-lucide="clock"></i>
+                                    5 - 10m
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="zap"></i>
+                                    -80% Dose
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="layers"></i>
+                                    3D Volume
+                                </span>
+                            </div>
 
-                            <a
-                                href="ct-scan.html"
-                                class="service-link"
-                            >
-                                Explore CT
-                                <i data-lucide="arrow-up-right"></i>
-                            </a>
+                            <div class="card-actions-row">
+                                <a href="ct-scan.html" class="btn btn-primary">
+                                    Explore CT
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=CT" class="btn btn-secondary">
+                                    Book Scan
+                                </a>
+                            </div>
 
                         </div>
 
                     </article>
 
 
-                    <!-- ULTRASOUND -->
+                    <!-- CARD 3: 4D HD ULTRASOUND & DOPPLER -->
+                    <article
+                        class="bento-service-card reveal"
+                        data-category="ultrasound"
+                    >
 
-                    <article class="service-feature-card reveal-left">
+                        <div class="card-media">
+                            <img
+                                src="../assets/images/ultra.jpg"
+                                alt="4D HD Ultrasound and Color Doppler"
+                                class="card-img"
+                            >
+                            <div class="card-media-overlay"></div>
 
-                        <div class="service-image ultrasound-image" style="background-image: url(../assets/images/ultra.jpg);background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;">
-
-                            <div class="image-overlay"></div>
-
-                            <div class="service-number">
-                                03
+                            <div class="card-media-badge">
+                                <span class="modality-code">US</span>
+                                <span class="tag-label">REAL-TIME</span>
                             </div>
 
-                            <div class="service-image-label">
-                                <i data-lucide="waves"></i>
-                                ULTRASOUND
+                            <div class="card-media-tags">
+                                <span class="media-tag">Color Doppler</span>
+                                <span class="media-tag">Safe Sound</span>
                             </div>
-
                         </div>
 
+                        <div class="card-body">
 
-                        <div class="service-feature-content">
-
-                            <div class="service-card-top">
-
-                                <span class="service-tag">
-                                    SONOGRAPHY
-                                </span>
-
-                                <div class="service-icon">
+                            <div class="card-header-row">
+                                <span class="category-tag">SONOGRAPHY & DOPPLER</span>
+                                <div class="card-icon-wrap">
                                     <i data-lucide="waves"></i>
                                 </div>
-
                             </div>
 
-                            <h3>
-                                Ultrasound
-                            </h3>
+                            <h3>4D HD Ultrasound & Color Doppler</h3>
 
                             <p>
-                                Real-time imaging using sound waves to
-                                examine organs, soft tissues, blood flow
-                                and selected areas during dynamic assessment.
+                                Advanced high-frequency acoustic beamforming for dynamic evaluation of soft tissues, vascular circulation, and fetal health.
                             </p>
 
-
-                            <div class="service-points">
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Real-time imaging
-                                </span>
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Abdominal studies
-                                </span>
-
-                                <span>
-                                    <i data-lucide="check"></i>
-                                    Doppler assessment
-                                </span>
-
+                            <div class="card-applications-grid compact-grid">
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>3D/4D Obstetric & Fetal Growth</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Carotid & Peripheral Vascular Doppler</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Thyroid, Abdomen & Soft Tissue</span>
+                                </div>
                             </div>
 
+                            <div class="card-specs-row">
+                                <span class="spec-chip">
+                                    <i data-lucide="clock"></i>
+                                    15 - 30m
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="heart"></i>
+                                    Non-Invasive
+                                </span>
+                                <span class="spec-chip highlight-chip">
+                                    <i data-lucide="shield-check"></i>
+                                    Zero Radiation
+                                </span>
+                            </div>
 
-                            <a
-                                href="ultrasound.html"
-                                class="service-link"
+                            <div class="card-actions-row">
+                                <a href="ultrasound.html" class="btn btn-primary">
+                                    Explore Ultrasound
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=Ultrasound" class="btn btn-secondary">
+                                    Book Scan
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 4: DIGITAL RADIOGRAPHY (X-RAY) -->
+                    <article
+                        class="bento-service-card reveal"
+                        data-category="screening"
+                    >
+
+                        <div class="card-media">
+                            <img
+                                src="../assets/images/hospital.jpg"
+                                alt="High-Frequency Digital Radiography"
+                                class="card-img"
                             >
-                                Explore Ultrasound
-                                <i data-lucide="arrow-up-right"></i>
-                            </a>
+                            <div class="card-media-overlay"></div>
+
+                            <div class="card-media-badge">
+                                <span class="modality-code">XR</span>
+                                <span class="tag-label">DIGITAL SENSORS</span>
+                            </div>
+
+                            <div class="card-media-tags">
+                                <span class="media-tag">Cesium Plate</span>
+                                <span class="media-tag">Instant PACS</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="card-header-row">
+                                <span class="category-tag">DIGITAL RADIOGRAPHY</span>
+                                <div class="card-icon-wrap">
+                                    <i data-lucide="file-badge-2"></i>
+                                </div>
+                            </div>
+
+                            <h3>Digital X-Ray & Skeletal Radiography</h3>
+
+                            <p>
+                                Direct flat-panel digital detectors produce crystal-sharp chest, bone, and joint views with instantaneous cloud delivery.
+                            </p>
+
+                            <div class="card-applications-grid compact-grid">
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Digital Chest & Pulmonary Radiographs</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Bone Fractures, Spine & Joint Surveys</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Walk-Ins Welcome with Fast Turnaround</span>
+                                </div>
+                            </div>
+
+                            <div class="card-specs-row">
+                                <span class="spec-chip">
+                                    <i data-lucide="clock"></i>
+                                    5 - 10m
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="zap"></i>
+                                    Minimal Dose
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="share-2"></i>
+                                    Digital Copy
+                                </span>
+                            </div>
+
+                            <div class="card-actions-row">
+                                <a href="contact.html?service=General" class="btn btn-primary">
+                                    Enquire X-Ray
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=General" class="btn btn-secondary">
+                                    Book Scan
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 5: DIGITAL MAMMOGRAPHY -->
+                    <article
+                        class="bento-service-card reveal"
+                        data-category="screening"
+                    >
+
+                        <div class="card-media">
+                            <img
+                                src="../assets/images/computed.jpg"
+                                alt="Digital Mammography and Women's Health Imaging"
+                                class="card-img"
+                            >
+                            <div class="card-media-overlay"></div>
+
+                            <div class="card-media-badge">
+                                <span class="modality-code">MAMMO</span>
+                                <span class="tag-label">WOMEN'S HEALTH</span>
+                            </div>
+
+                            <div class="card-media-tags">
+                                <span class="media-tag">High Resolution</span>
+                                <span class="media-tag">Gentle Compression</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="card-header-row">
+                                <span class="category-tag">MAMMOGRAPHY & SCREENING</span>
+                                <div class="card-icon-wrap">
+                                    <i data-lucide="heart-pulse"></i>
+                                </div>
+                            </div>
+
+                            <h3>Digital Mammography & Breast Health</h3>
+
+                            <p>
+                                Low-dose digital screening and diagnostic breast imaging designed for early detection with curved comfort paddle technology.
+                            </p>
+
+                            <div class="card-applications-grid compact-grid">
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Routine Annual Wellness Screenings</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>High-Definition Micro-Calcification Views</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Combined Ultrasound Breast Correlates</span>
+                                </div>
+                            </div>
+
+                            <div class="card-specs-row">
+                                <span class="spec-chip">
+                                    <i data-lucide="clock"></i>
+                                    15 - 20m
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="shield-check"></i>
+                                    Low-Dose Mode
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="smile"></i>
+                                    Comfort Paddle
+                                </span>
+                            </div>
+
+                            <div class="card-actions-row">
+                                <a href="contact.html?service=General" class="btn btn-primary">
+                                    Enquire Mammo
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=General" class="btn btn-secondary">
+                                    Book Scan
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 6: PREVENTIVE SCREENING PACKAGES -->
+                    <article
+                        class="bento-service-card reveal"
+                        data-category="screening"
+                    >
+
+                        <div class="card-media">
+                            <img
+                                src="../assets/images/brain.jpg"
+                                alt="Preventive Diagnostic Screening Packages"
+                                class="card-img"
+                            >
+                            <div class="card-media-overlay"></div>
+
+                            <div class="card-media-badge">
+                                <span class="modality-code">WELL</span>
+                                <span class="tag-label">COMPREHENSIVE</span>
+                            </div>
+
+                            <div class="card-media-tags">
+                                <span class="media-tag">Whole-Body</span>
+                                <span class="media-tag">Proactive Care</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="card-header-row">
+                                <span class="category-tag">PREVENTIVE HEALTH</span>
+                                <div class="card-icon-wrap">
+                                    <i data-lucide="activity"></i>
+                                </div>
+                            </div>
+
+                            <h3>Executive Diagnostic Screening Packages</h3>
+
+                            <p>
+                                Structured health screening panels combining MRI, low-dose CT calcium scoring, and organ ultrasound for early risk detection.
+                            </p>
+
+                            <div class="card-applications-grid compact-grid">
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Whole-Body MRI & Brain Vascular Survey</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Cardiac Calcium Scoring & Stroke Risk</span>
+                                </div>
+                                <div class="app-item">
+                                    <i data-lucide="check-circle-2"></i>
+                                    <span>Abdominal & Pelvic Ultrasound Survey</span>
+                                </div>
+                            </div>
+
+                            <div class="card-specs-row">
+                                <span class="spec-chip">
+                                    <i data-lucide="clipboard-check"></i>
+                                    Tailored Panel
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="award"></i>
+                                    Dual Radiologist
+                                </span>
+                                <span class="spec-chip">
+                                    <i data-lucide="file-text"></i>
+                                    Executive Report
+                                </span>
+                            </div>
+
+                            <div class="card-actions-row">
+                                <a href="contact.html?service=General" class="btn btn-primary">
+                                    View Packages
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=General" class="btn btn-secondary">
+                                    Book Scan
+                                </a>
+                            </div>
 
                         </div>
 
@@ -803,227 +1029,6 @@
 
                 </div>
 
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             COMPARISON
-        ================================================== -->
-
-        <section class="modality-section section">
-
-            <div class="container">
-
-                <div class="modality-layout">
-
-                    <div class="modality-copy reveal-left">
-
-                        <span class="eyebrow">
-                            FIND YOUR MODALITY
-                        </span>
-
-                        <h2>
-                            Three technologies.
-                            <span>Different strengths.</span>
-                        </h2>
-
-                        <p>
-                            MRI, CT and ultrasound each provide a different
-                            view of the body. Your referring clinician
-                            determines which examination is appropriate
-                            based on your symptoms and clinical needs.
-                        </p>
-
-
-                        <div class="modality-selector">
-
-                            <button
-                                class="modality-btn active"
-                                data-modality="mri"
-                                type="button"
-                            >
-                                <span>01</span>
-                                MRI
-                            </button>
-
-                            <button
-                                class="modality-btn"
-                                data-modality="ct"
-                                type="button"
-                            >
-                                <span>02</span>
-                                CT Scan
-                            </button>
-
-                            <button
-                                class="modality-btn"
-                                data-modality="ultrasound"
-                                type="button"
-                            >
-                                <span>03</span>
-                                Ultrasound
-                            </button>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="modality-display reveal-right">
-
-
-                        <!-- MRI PANEL -->
-
-                        <div
-                            class="modality-panel active"
-                            data-panel="mri"
-                        >
-
-                            <div class="modality-panel-header">
-
-                                <span>
-                                    MRI
-                                </span>
-
-                                <i data-lucide="scan"></i>
-
-                            </div>
-
-                            <h3>
-                                Excellent soft-tissue contrast
-                            </h3>
-
-                            <p>
-                                MRI is particularly useful when detailed
-                                soft-tissue information is important.
-                            </p>
-
-
-                            <div class="modality-facts">
-
-                                <div>
-                                    <small>TECHNOLOGY</small>
-                                    <strong>Magnetic field</strong>
-                                </div>
-
-                                <div>
-                                    <small>STRENGTH</small>
-                                    <strong>Soft tissue detail</strong>
-                                </div>
-
-                                <div>
-                                    <small>COMMON AREAS</small>
-                                    <strong>Brain · Spine · Joints</strong>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- CT PANEL -->
-
-                        <div
-                            class="modality-panel"
-                            data-panel="ct"
-                        >
-
-                            <div class="modality-panel-header">
-
-                                <span>
-                                    CT SCAN
-                                </span>
-
-                                <i data-lucide="circle-dot"></i>
-
-                            </div>
-
-                            <h3>
-                                Fast cross-sectional imaging
-                            </h3>
-
-                            <p>
-                                CT can provide detailed cross-sectional
-                                views quickly and is widely used for
-                                many diagnostic situations.
-                            </p>
-
-
-                            <div class="modality-facts">
-
-                                <div>
-                                    <small>TECHNOLOGY</small>
-                                    <strong>X-ray based</strong>
-                                </div>
-
-                                <div>
-                                    <small>STRENGTH</small>
-                                    <strong>Speed & detail</strong>
-                                </div>
-
-                                <div>
-                                    <small>COMMON AREAS</small>
-                                    <strong>Chest · Abdomen · Head</strong>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- ULTRASOUND PANEL -->
-
-                        <div
-                            class="modality-panel"
-                            data-panel="ultrasound"
-                        >
-
-                            <div class="modality-panel-header">
-
-                                <span>
-                                    ULTRASOUND
-                                </span>
-
-                                <i data-lucide="waves"></i>
-
-                            </div>
-
-                            <h3>
-                                Real-time sound-wave imaging
-                            </h3>
-
-                            <p>
-                                Ultrasound provides dynamic imaging and
-                                can be useful for organs, soft tissues
-                                and blood-flow assessment.
-                            </p>
-
-
-                            <div class="modality-facts">
-
-                                <div>
-                                    <small>TECHNOLOGY</small>
-                                    <strong>Sound waves</strong>
-                                </div>
-
-                                <div>
-                                    <small>STRENGTH</small>
-                                    <strong>Real-time imaging</strong>
-                                </div>
-
-                                <div>
-                                    <small>COMMON AREAS</small>
-                                    <strong>Abdomen · Soft tissue</strong>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
                 </div>
 
             </div>
@@ -1032,107 +1037,380 @@
 
 
         <!-- =================================================
-             PATIENT EXPERIENCE
+             INTERACTIVE MODALITY COMPARISON MATRIX
         ================================================== -->
 
-        <section class="service-experience section">
+        <section class="modality-matrix-section section" id="modality-matrix">
 
             <div class="container">
 
-                <div class="experience-heading reveal">
+                <div class="matrix-heading reveal">
 
                     <span class="eyebrow">
-                        BEYOND THE MACHINE
+                        <i data-lucide="layers"></i>
+                        MODALITY COMPARISON WORKBENCH
                     </span>
 
                     <h2>
-                        Technology matters.
-                        <span>So does how you experience it.</span>
+                        Three Technologies.
+                        <span>Different Diagnostic Strengths.</span>
                     </h2>
+
+                    <p>
+                        Your referring physician selects your scan based on your symptoms and clinical question. Use this interactive matrix to understand what each modality excels at and what to expect.
+                    </p>
 
                 </div>
 
 
-                <div class="experience-grid">
+                <!-- Interactive Tab Selectors -->
+                <div class="matrix-layout reveal">
+
+                    <div class="matrix-nav" role="tablist">
+
+                        <button
+                            class="matrix-tab-btn active"
+                            data-matrix="mri"
+                            type="button"
+                            role="tab"
+                            aria-selected="true"
+                        >
+                            <div class="tab-badge">01</div>
+                            <div class="tab-info">
+                                <strong>3.0T MRI Imaging</strong>
+                                <small>Magnetic Resonance · Soft Tissue Detail</small>
+                            </div>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+
+                        <button
+                            class="matrix-tab-btn"
+                            data-matrix="ct"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <div class="tab-badge">02</div>
+                            <div class="tab-info">
+                                <strong>128-Slice CT Scan</strong>
+                                <small>Computed Tomography · Rapid Cross-Sections</small>
+                            </div>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+
+                        <button
+                            class="matrix-tab-btn"
+                            data-matrix="ultrasound"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <div class="tab-badge">03</div>
+                            <div class="tab-info">
+                                <strong>4D HD Ultrasound</strong>
+                                <small>High-Frequency Sound Waves · Real-Time</small>
+                            </div>
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+
+                    </div>
 
 
-                    <article class="experience-card reveal">
+                    <!-- Matrix Content Displays -->
+                    <div class="matrix-content-wrap">
 
-                        <div class="experience-card-number">
-                            01
+                        <!-- MRI MATRIX CARD -->
+                        <div class="matrix-panel active" data-matrix-panel="mri">
+
+                            <div class="matrix-panel-header">
+                                <div>
+                                    <span class="panel-eyebrow">MAGNETIC RESONANCE IMAGING</span>
+                                    <h3>Supreme Soft Tissue & Neurological Contrast</h3>
+                                </div>
+                                <div class="modality-glyph">
+                                    <i data-lucide="scan"></i>
+                                </div>
+                            </div>
+
+                            <p class="panel-desc">
+                                MRI uses powerful magnetic fields and radiofrequency pulses to create detailed cross-sectional pictures of organs and tissues inside your body without any ionizing radiation.
+                            </p>
+
+                            <div class="matrix-specs-grid">
+
+                                <div class="matrix-spec-box">
+                                    <small>PRIMARY MECHANISM</small>
+                                    <strong>3.0T Magnetic Field + RF Pulses</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>IONIZING RADIATION</small>
+                                    <strong class="highlight-green">Zero Radiation (0.0 mSv)</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>AVERAGE DURATION</small>
+                                    <strong>25 to 45 Minutes</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>CLINICAL SWEET SPOT</small>
+                                    <strong>Brain, Spine, Joints, Ligaments & Discs</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>PATIENT SENSORY EXPERIENCE</small>
+                                    <strong>QuietScan headphones, wide-bore tunnel</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>KEY PREPARATION</small>
+                                    <strong>Remove metal objects; implant screening</strong>
+                                </div>
+
+                            </div>
+
+                            <div class="matrix-panel-cta">
+                                <a href="mri.html" class="btn btn-primary">
+                                    Detailed MRI Modality Guide
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=MRI" class="btn btn-secondary">
+                                    Schedule MRI Exam
+                                </a>
+                            </div>
+
                         </div>
 
-                        <i data-lucide="message-circle"></i>
 
-                        <h3>
-                            Clear Communication
-                        </h3>
+                        <!-- CT MATRIX CARD -->
+                        <div class="matrix-panel" data-matrix-panel="ct">
+
+                            <div class="matrix-panel-header">
+                                <div>
+                                    <span class="panel-eyebrow">COMPUTED TOMOGRAPHY</span>
+                                    <h3>High-Speed Volumetric Anatomy & Bone Detail</h3>
+                                </div>
+                                <div class="modality-glyph">
+                                    <i data-lucide="circle-dot"></i>
+                                </div>
+                            </div>
+
+                            <p class="panel-desc">
+                                CT rotates an X-ray source around the body to capture multiple cross-sectional images, producing comprehensive 3D views of bones, blood vessels, chest, and abdominal organs in seconds.
+                            </p>
+
+                            <div class="matrix-specs-grid">
+
+                                <div class="matrix-spec-box">
+                                    <small>PRIMARY MECHANISM</small>
+                                    <strong>128-Slice Rotating X-Ray Array</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>IONIZING RADIATION</small>
+                                    <strong class="highlight-blue">AI Low-Dose Protocol (Optimized)</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>AVERAGE DURATION</small>
+                                    <strong>5 to 10 Minutes</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>CLINICAL SWEET SPOT</small>
+                                    <strong>Lungs, Heart, Abdomen, Pelvis & Fractures</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>PATIENT SENSORY EXPERIENCE</small>
+                                    <strong>Open wide ring, whisper-quiet rotation</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>KEY PREPARATION</small>
+                                    <strong>4-hour fasting for IV contrast; hydration</strong>
+                                </div>
+
+                            </div>
+
+                            <div class="matrix-panel-cta">
+                                <a href="ct-scan.html" class="btn btn-primary">
+                                    Detailed CT Modality Guide
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=CT" class="btn btn-secondary">
+                                    Schedule CT Exam
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <!-- ULTRASOUND MATRIX CARD -->
+                        <div class="matrix-panel" data-matrix-panel="ultrasound">
+
+                            <div class="matrix-panel-header">
+                                <div>
+                                    <span class="panel-eyebrow">DIAGNOSTIC SONOGRAPHY</span>
+                                    <h3>Dynamic Real-Time Soundwave Imaging</h3>
+                                </div>
+                                <div class="modality-glyph">
+                                    <i data-lucide="waves"></i>
+                                </div>
+                            </div>
+
+                            <p class="panel-desc">
+                                Ultrasound utilizes high-frequency acoustic waves that bounce off internal organs and tissues, creating real-time video clips of organ motion, blood circulation, and fetal development.
+                            </p>
+
+                            <div class="matrix-specs-grid">
+
+                                <div class="matrix-spec-box">
+                                    <small>PRIMARY MECHANISM</small>
+                                    <strong>High-Frequency Acoustic Transducer</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>IONIZING RADIATION</small>
+                                    <strong class="highlight-green">Zero Radiation (100% Safe)</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>AVERAGE DURATION</small>
+                                    <strong>15 to 30 Minutes</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>CLINICAL SWEET SPOT</small>
+                                    <strong>Fetal Health, Vascular Flow, Thyroid & Organs</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>PATIENT SENSORY EXPERIENCE</small>
+                                    <strong>Warm acoustic gel, gentle hand-held wand</strong>
+                                </div>
+
+                                <div class="matrix-spec-box">
+                                    <small>KEY PREPARATION</small>
+                                    <strong>Full bladder for pelvic scans; fasting for abdomen</strong>
+                                </div>
+
+                            </div>
+
+                            <div class="matrix-panel-cta">
+                                <a href="ultrasound.html" class="btn btn-primary">
+                                    Detailed Ultrasound Guide
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                                <a href="contact.html?service=Ultrasound" class="btn btn-secondary">
+                                    Schedule Ultrasound Exam
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PATIENT EXPERIENCE & CLINICAL WORKFLOW
+        ================================================== -->
+
+        <section class="patient-workflow-section section">
+
+            <div class="container">
+
+                <div class="section-heading-centered section-heading centered reveal">
+
+                    <span class="eyebrow">
+                        <i data-lucide="shield-check"></i>
+                        THE CLARITY PATIENT PATHWAY
+                    </span>
+
+                    <h2>
+                        From Referral to Report.
+                        <span>Designed For Complete Peace of Mind.</span>
+                    </h2>
+
+                    <p>
+                        We know that medical imaging can feel intimidating. Our clinical workflow eliminates waiting, anxiety, and confusion through thoughtful care at every milestone.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-cards-grid">
+
+                    <article class="workflow-card reveal">
+
+                        <div class="workflow-step-num">01</div>
+
+                        <div class="workflow-card-icon">
+                            <i data-lucide="calendar-check"></i>
+                        </div>
+
+                        <h3>Seamless Digital Scheduling</h3>
 
                         <p>
-                            We explain the examination process, preparation
-                            requirements and what to expect before your scan.
+                            Upload your prescription online or call our coordinator. We verify your insurance and clinical protocol and confirm your exact slot in under 2 minutes.
                         </p>
 
                     </article>
 
 
-                    <article class="experience-card reveal">
+                    <article class="workflow-card reveal">
 
-                        <div class="experience-card-number">
-                            02
+                        <div class="workflow-step-num">02</div>
+
+                        <div class="workflow-card-icon">
+                            <i data-lucide="clipboard-list"></i>
                         </div>
 
-                        <i data-lucide="accessibility"></i>
-
-                        <h3>
-                            Comfortable Process
-                        </h3>
+                        <h3>Tailored Preparation Support</h3>
 
                         <p>
-                            Our team focuses on respectful positioning,
-                            clear instructions and a calm environment.
+                            Receive personalized preparation guidance via SMS and email detailing fasting, clothing, and metal safety so you arrive feeling calm and informed.
                         </p>
 
                     </article>
 
 
-                    <article class="experience-card reveal">
+                    <article class="workflow-card reveal">
 
-                        <div class="experience-card-number">
-                            03
+                        <div class="workflow-step-num">03</div>
+
+                        <div class="workflow-card-icon">
+                            <i data-lucide="heart-pulse"></i>
                         </div>
 
-                        <i data-lucide="file-check-2"></i>
-
-                        <h3>
-                            Organized Results
-                        </h3>
+                        <h3>Comfortable Diagnostic Exam</h3>
 
                         <p>
-                            Imaging workflows are structured to support
-                            efficient reporting and communication with
-                            referring clinicians.
+                            Relax in climate-controlled suites with ambient lighting, wide-bore scanners, acoustic noise reduction, and attentive registered technologists.
                         </p>
 
                     </article>
 
 
-                    <article class="experience-card reveal">
+                    <article class="workflow-card reveal">
 
-                        <div class="experience-card-number">
-                            04
+                        <div class="workflow-step-num">04</div>
+
+                        <div class="workflow-card-icon">
+                            <i data-lucide="file-check"></i>
                         </div>
 
-                        <i data-lucide="shield"></i>
-
-                        <h3>
-                            Safety Awareness
-                        </h3>
+                        <h3>Sub-24h Dual Radiologist Report</h3>
 
                         <p>
-                            Relevant screening and modality-specific
-                            precautions are considered throughout the
-                            imaging process.
+                            Every scan receives a dual-read by fellowship-trained radiologists. Secure digital DICOM images and reports are delivered to you and your doctor via PACS portal.
                         </p>
 
                     </article>
@@ -1145,45 +1423,147 @@
 
 
         <!-- =================================================
-             PREPARATION
+             CLINICAL QUALITY & ACCREDITATIONS
         ================================================== -->
 
-        <section class="services-prep section">
+        <section class="clinical-standards-section section">
 
             <div class="container">
 
-                <div class="prep-banner reveal">
+                <div class="standards-banner reveal">
 
-                    <div class="prep-banner-icon">
+                    <div class="standards-left">
+
+                        <span class="eyebrow">
+                            <i data-lucide="award"></i>
+                            CLINICAL EXCELLENCE GUARANTEE
+                        </span>
+
+                        <h2>
+                            Safety Protocols Built On
+                            <span>International Standards.</span>
+                        </h2>
+
+                        <p>
+                            Our facility is fully licensed and accredited under AERB and ISO 15189 standards, upholding strict ALARA radiation principles and clinical peer review.
+                        </p>
+
+                        <div class="standards-bullets">
+
+                            <div class="standard-bullet">
+                                <i data-lucide="check-circle"></i>
+                                <div>
+                                    <strong>Sub-Specialty Fellowship Radiologists</strong>
+                                    <span>Neuro, Musculoskeletal, Body & Pediatric Diagnostic Specialists</span>
+                                </div>
+                            </div>
+
+                            <div class="standard-bullet">
+                                <i data-lucide="check-circle"></i>
+                                <div>
+                                    <strong>Instant Physician Cloud PACS Sharing</strong>
+                                    <span>Direct, real-time DICOM image access for referring clinicians</span>
+                                </div>
+                            </div>
+
+                            <div class="standard-bullet">
+                                <i data-lucide="check-circle"></i>
+                                <div>
+                                    <strong>Critical Finding Phone Alert Guarantee</strong>
+                                    <span>Urgent findings communicated directly to your physician within 1 hour</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="standards-right">
+
+                        <div class="quality-badge-card">
+
+                            <div class="badge-icon-wrap">
+                                <i data-lucide="shield"></i>
+                            </div>
+
+                            <h3>Quality Assurance</h3>
+
+                            <div class="quality-metrics-list">
+                                <div class="quality-metric">
+                                    <span>Diagnostic Accuracy Rate</span>
+                                    <strong>99.8%</strong>
+                                </div>
+                                <div class="quality-metric">
+                                    <span>Average Report Turnaround</span>
+                                    <strong>&lt; 18 Hours</strong>
+                                </div>
+                                <div class="quality-metric">
+                                    <span>Patient Satisfaction Score</span>
+                                    <strong>4.9 / 5.0</strong>
+                                </div>
+                                <div class="quality-metric">
+                                    <span>Radiation Dose Reduction</span>
+                                    <strong>Up to 80%</strong>
+                                </div>
+                            </div>
+
+                            <a href="contact.html" class="btn btn-primary full-btn">
+                                Schedule Consultation
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SCAN PREPARATION HUB BANNER
+        ================================================== -->
+
+        <section class="services-prep-banner-section section">
+
+            <div class="container">
+
+                <div class="prep-cta-box reveal">
+
+                    <div class="prep-cta-icon">
                         <i data-lucide="clipboard-check"></i>
                     </div>
 
-                    <div class="prep-banner-content">
+                    <div class="prep-cta-content">
 
                         <span class="eyebrow">
-                            BEFORE YOUR SCAN
+                            PATIENT GUIDELINES
                         </span>
 
                         <h2>
-                            Preparation can make
-                            <span>your visit smoother.</span>
+                            Proper Preparation Ensures
+                            <span>Flawless Image Quality.</span>
                         </h2>
 
                         <p>
-                            Preparation requirements vary by examination.
-                            Check your appointment instructions carefully
-                            and contact our team if you are unsure.
+                            Each examination has specific dietary, clothing, and contrast requirements. Review our comprehensive scan guidelines before your appointment to avoid delays.
                         </p>
 
                     </div>
 
-                    <a
-                        href="prepare-scan.html"
-                        class="btn btn-primary"
-                    >
-                        Scan Preparation
-                        <i data-lucide="arrow-up-right"></i>
-                    </a>
+                    <div class="prep-cta-actions">
+                        <a
+                            href="prepare-scan.html"
+                            class="btn btn-primary"
+                        >
+                            View Preparation Guide
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -1193,7 +1573,7 @@
 
 
         <!-- =================================================
-             FAQ
+             FAQ SECTION
         ================================================== -->
 
         <section class="section faq-section services-faq">
@@ -1203,24 +1583,32 @@
                 <div class="faq-intro reveal-left">
 
                     <span class="eyebrow">
-                        COMMON QUESTIONS
+                        <i data-lucide="help-circle"></i>
+                        COMMONLY ASKED QUESTIONS
                     </span>
 
                     <h2>
-                        Before you
-                        <span>book your scan.</span>
+                        Clear Answers Before
+                        <span>You Arrive For Your Scan.</span>
                     </h2>
 
                     <p>
-                        Here are answers to some common questions about
-                        diagnostic imaging services.
+                        Have questions about referral prescriptions, contrast injections, radiation safety, or report delivery? We're here to help.
                     </p>
+
+                    <div class="faq-support-box">
+                        <i data-lucide="phone-call"></i>
+                        <div>
+                            <small>HAVE A SPECIFIC QUESTION?</small>
+                            <strong>+91 44 4567 8900</strong>
+                        </div>
+                    </div>
 
                     <a
                         href="contact.html"
                         class="btn btn-secondary"
                     >
-                        Ask Our Team
+                        Contact Our Team
                         <i data-lucide="arrow-up-right"></i>
                     </a>
 
@@ -1229,15 +1617,15 @@
 
                 <div class="faq-list reveal-right">
 
-
                     <div class="faq-item open">
 
                         <button
                             class="faq-question"
                             type="button"
+                            aria-expanded="true"
                         >
                             <span>
-                                How do I know which scan I need?
+                                Do I need a doctor's referral or prescription for a scan?
                             </span>
 
                             <i data-lucide="plus"></i>
@@ -1246,11 +1634,7 @@
                         <div class="faq-answer">
 
                             <p>
-                                The appropriate examination depends on
-                                your symptoms, medical history and the
-                                clinical question your referring clinician
-                                is trying to answer. Follow the examination
-                                listed on your referral or appointment.
+                                Yes. For diagnostic examinations such as MRI, CT Scan, and specialized Ultrasound, a referral or prescription from a registered medical practitioner is required to ensure the appropriate anatomical protocol is performed. For elective preventive screening packages, our in-house medical officer can provide clinical consultation.
                             </p>
 
                         </div>
@@ -1263,9 +1647,10 @@
                         <button
                             class="faq-question"
                             type="button"
+                            aria-expanded="false"
                         >
                             <span>
-                                Do all scans require preparation?
+                                What is the difference between 3.0T and 1.5T MRI?
                             </span>
 
                             <i data-lucide="plus"></i>
@@ -1274,10 +1659,7 @@
                         <div class="faq-answer">
 
                             <p>
-                                No. Preparation varies by examination.
-                                Some scans may require fasting, hydration
-                                or other instructions, while others require
-                                little or no preparation.
+                                A 3.0 Tesla MRI magnet produces twice the magnetic field strength of standard 1.5T scanners. This generates significantly higher spatial resolution and signal contrast, enabling radiologists to visualize microscopic vascular structures, delicate brain tissue, and early cartilage tears that may appear subtle on lower-field systems.
                             </p>
 
                         </div>
@@ -1290,9 +1672,10 @@
                         <button
                             class="faq-question"
                             type="button"
+                            aria-expanded="false"
                         >
                             <span>
-                                Can I ask questions before my appointment?
+                                How is radiation minimized during a CT scan?
                             </span>
 
                             <i data-lucide="plus"></i>
@@ -1301,11 +1684,7 @@
                         <div class="faq-answer">
 
                             <p>
-                                Yes. Our team can help explain appointment
-                                instructions and general preparation
-                                requirements. Clinical decisions about the
-                                need for a particular examination should
-                                come from your referring healthcare provider.
+                                Our 128-slice CT scanner utilizes AI-powered iterative reconstruction and dynamic z-axis collimation. These intelligent systems modulate the X-ray beam in real time based on patient body thickness, reducing ionizing radiation dose by up to 80% while preserving ultra-sharp diagnostic image quality.
                             </p>
 
                         </div>
@@ -1318,9 +1697,10 @@
                         <button
                             class="faq-question"
                             type="button"
+                            aria-expanded="false"
                         >
                             <span>
-                                What should I bring to my appointment?
+                                What if I experience claustrophobia or anxiety in the scanner?
                             </span>
 
                             <i data-lucide="plus"></i>
@@ -1329,10 +1709,7 @@
                         <div class="faq-answer">
 
                             <p>
-                                Bring your referral or appointment details,
-                                relevant previous imaging or reports when
-                                available, and any identification or
-                                documentation requested by the center.
+                                We prioritize patient comfort. Our MRI features a 70cm wide-bore design with open ends, ambient adjustable lighting, QuietScan acoustic noise suppression, and continuous two-way intercom communication. You will hold an emergency call bulb, and a family member is welcome in the room following safety screening.
                             </p>
 
                         </div>
@@ -1345,9 +1722,10 @@
                         <button
                             class="faq-question"
                             type="button"
+                            aria-expanded="false"
                         >
                             <span>
-                                How can I book an imaging appointment?
+                                When and how will my referring doctor receive the report?
                             </span>
 
                             <i data-lucide="plus"></i>
@@ -1356,10 +1734,7 @@
                         <div class="faq-answer">
 
                             <p>
-                                Use our appointment page or contact the
-                                imaging center directly. Our team can help
-                                you understand the booking process and
-                                appointment requirements.
+                                Emergency and STAT scan results are communicated within 2 hours. Routine reports and DICOM imaging series are finalized by our dual-board radiologists within 18–24 hours and uploaded directly to our secure Cloud PACS physician portal. Patients receive a direct download link via SMS and email.
                             </p>
 
                         </div>
@@ -1374,7 +1749,7 @@
 
 
         <!-- =================================================
-             CTA
+             FINAL CLOSING CTA BANNER
         ================================================== -->
 
         <section class="services-cta">
@@ -1386,18 +1761,17 @@
                     <div>
 
                         <span class="eyebrow">
+                            <i data-lucide="calendar"></i>
                             READY WHEN YOU ARE
                         </span>
 
                         <h2>
-                            Let's make your next
-                            <span>imaging visit easier.</span>
+                            Experience Diagnostic Imaging
+                            <span>Engineered For Precision.</span>
                         </h2>
 
                         <p>
-                            Have a referral or need help understanding
-                            your appointment requirements? Our team is
-                            here to help.
+                            Have a referral or need guidance selecting the appropriate examination? Our dedicated clinical imaging coordinators are available 7 days a week to assist you.
                         </p>
 
                     </div>
@@ -1420,7 +1794,7 @@
                             <i data-lucide="phone"></i>
 
                             <span>
-                                <small>CALL OUR TEAM</small>
+                                <small>DIRECT APPOINTMENT DESK</small>
                                 <strong>+91 44 4567 8900</strong>
                             </span>
 

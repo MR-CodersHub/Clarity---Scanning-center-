@@ -1,325 +1,163 @@
 /* =========================================================
    CLARITY IMAGING CENTER
-   SERVICES PAGE JAVASCRIPT
+   SERVICES PAGE INTERACTIVE JAVASCRIPT
 ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =====================================================
-       HELPERS
+       1. LUCIDE ICONS INITIALIZATION
     ===================================================== */
-
-    const $ = (selector, scope = document) =>
-        scope.querySelector(selector);
-
-    const $$ = (selector, scope = document) =>
-        [...scope.querySelectorAll(selector)];
-
-
-    /* =====================================================
-       MODALITY SWITCHER
-    ===================================================== */
-
-    const modalityButtons =
-        $$(".modality-btn");
-
-    const modalityPanels =
-        $$(".modality-panel");
-
-
-    function selectModality(modality) {
-
-        modalityButtons.forEach(button => {
-
-            const isActive =
-                button.dataset.modality === modality;
-
-            button.classList.toggle(
-                "active",
-                isActive
-            );
-
-        });
-
-
-        modalityPanels.forEach(panel => {
-
-            const isActive =
-                panel.dataset.panel === modality;
-
-            panel.classList.toggle(
-                "active",
-                isActive
-            );
-
-        });
-
-    }
-
-
-    modalityButtons.forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            const modality =
-                button.dataset.modality;
-
-            if (!modality) return;
-
-            selectModality(modality);
-
-        });
-
-    });
-
-
-    /* =====================================================
-       KEYBOARD SUPPORT
-    ===================================================== */
-
-    modalityButtons.forEach((button, index) => {
-
-        button.addEventListener(
-            "keydown",
-            event => {
-
-                let nextIndex = null;
-
-
-                if (event.key === "ArrowDown") {
-
-                    nextIndex =
-                        (index + 1) %
-                        modalityButtons.length;
-
-                }
-
-
-                if (event.key === "ArrowUp") {
-
-                    nextIndex =
-                        (index - 1 +
-                            modalityButtons.length) %
-                        modalityButtons.length;
-
-                }
-
-
-                if (event.key === "Home") {
-
-                    nextIndex = 0;
-
-                }
-
-
-                if (event.key === "End") {
-
-                    nextIndex =
-                        modalityButtons.length - 1;
-
-                }
-
-
-                if (nextIndex === null) return;
-
-
-                event.preventDefault();
-
-
-                const nextButton =
-                    modalityButtons[nextIndex];
-
-                const modality =
-                    nextButton.dataset.modality;
-
-
-                selectModality(modality);
-
-                nextButton.focus();
-
-            }
-        );
-
-    });
-
-
-    /* =====================================================
-       SERVICE CARD IMAGE TILT
-    ===================================================== */
-
-    const cards =
-        $$(".service-feature-card");
-
-
-    const canTilt =
-        matchMedia(
-            "(hover: hover) and (pointer: fine)"
-        ).matches;
-
-
-    const reducedMotion =
-        matchMedia(
-            "(prefers-reduced-motion: reduce)"
-        ).matches;
-
-
-    if (canTilt && !reducedMotion) {
-
-        cards.forEach(card => {
-
-            card.addEventListener(
-                "pointermove",
-                event => {
-
-                    const rect =
-                        card.getBoundingClientRect();
-
-
-                    const x =
-                        (event.clientX - rect.left) /
-                        rect.width -
-                        0.5;
-
-
-                    const y =
-                        (event.clientY - rect.top) /
-                        rect.height -
-                        0.5;
-
-
-                    card.style.transform =
-                        `perspective(1000px)
-                         rotateX(${y * -2}deg)
-                         rotateY(${x * 2}deg)
-                         translateY(-7px)`;
-
-                }
-            );
-
-
-            card.addEventListener(
-                "pointerleave",
-                () => {
-
-                    card.style.transform = "";
-
-                }
-            );
-
-        });
-
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons();
     }
 
 
     /* =====================================================
-       SERVICE CARD SPOTLIGHT
+       2. MODALITY COMPARISON MATRIX TABS
     ===================================================== */
+    const matrixTabs = document.querySelectorAll(".matrix-tab-btn");
+    const matrixPanels = document.querySelectorAll(".matrix-panel");
 
-    cards.forEach(card => {
+    function switchMatrix(matrixKey) {
+        matrixTabs.forEach(tab => {
+            const isActive = tab.dataset.matrix === matrixKey;
+            tab.classList.toggle("active", isActive);
+            tab.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
 
-        card.addEventListener(
-            "pointermove",
-            event => {
+        matrixPanels.forEach(panel => {
+            const isActive = panel.dataset.matrixPanel === matrixKey;
+            panel.classList.toggle("active", isActive);
+        });
 
-                const rect =
-                    card.getBoundingClientRect();
+        if (window.lucide && typeof window.lucide.createIcons === "function") {
+            window.lucide.createIcons();
+        }
+    }
 
+    matrixTabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            const key = tab.dataset.matrix;
+            if (key) switchMatrix(key);
+        });
 
-                card.style.setProperty(
-                    "--card-x",
-                    `${event.clientX - rect.left}px`
-                );
-
-
-                card.style.setProperty(
-                    "--card-y",
-                    `${event.clientY - rect.top}px`
-                );
-
+        // Keyboard arrow navigation
+        tab.addEventListener("keydown", (e) => {
+            let nextIndex = null;
+            if (e.key === "ArrowDown" || e.key === "ArrowRight") {
+                nextIndex = (index + 1) % matrixTabs.length;
+            } else if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
+                nextIndex = (index - 1 + matrixTabs.length) % matrixTabs.length;
+            } else if (e.key === "Home") {
+                nextIndex = 0;
+            } else if (e.key === "End") {
+                nextIndex = matrixTabs.length - 1;
             }
-        );
 
+            if (nextIndex !== null) {
+                e.preventDefault();
+                matrixTabs[nextIndex].click();
+                matrixTabs[nextIndex].focus();
+            }
+        });
     });
 
 
     /* =====================================================
-       ACTIVE SERVICE URL HIGHLIGHT
+       3. CATALOG CATEGORY FILTERING
     ===================================================== */
+    const filterPills = document.querySelectorAll(".filter-pill");
+    const serviceCards = document.querySelectorAll(".bento-service-card");
 
-    const currentPage =
-        window.location.pathname
-            .split("/")
-            .pop();
+    filterPills.forEach(pill => {
+        pill.addEventListener("click", () => {
+            filterPills.forEach(p => p.classList.remove("active"));
+            pill.classList.add("active");
 
+            const filter = pill.dataset.filter;
 
-    if (currentPage === "services.html") {
-
-        $$(".desktop-nav a").forEach(link => {
-
-            const href =
-                link.getAttribute("href");
-
-            if (href === "services.html") {
-
-                link.classList.add("active");
-
-            }
-
+            serviceCards.forEach(card => {
+                const category = card.dataset.category;
+                if (filter === "all" || category === filter) {
+                    card.style.display = "";
+                    card.style.opacity = "1";
+                    card.style.transform = "scale(1)";
+                } else {
+                    card.style.display = "none";
+                }
+            });
         });
-
-    }
+    });
 
 
     /* =====================================================
-       SMOOTH SCROLL — SERVICES CTA
+       4. FAQ ACCORDION (SMOOTH EXPAND/COLLAPSE)
     ===================================================== */
+    const faqQuestions = document.querySelectorAll(".faq-question");
 
-    $$('a[href="#services-grid"]')
-        .forEach(link => {
+    faqQuestions.forEach(question => {
+        question.addEventListener("click", () => {
+            const currentItem = question.closest(".faq-item");
+            if (!currentItem) return;
 
-            link.addEventListener(
-                "click",
-                event => {
+            const isOpen = currentItem.classList.contains("open");
 
-                    const target =
-                        document.getElementById(
-                            "services-grid"
-                        );
+            // Close all items
+            document.querySelectorAll(".faq-item").forEach(item => {
+                item.classList.remove("open");
+                const btn = item.querySelector(".faq-question");
+                if (btn) btn.setAttribute("aria-expanded", "false");
+            });
+
+            // Toggle current item
+            if (!isOpen) {
+                currentItem.classList.add("open");
+                question.setAttribute("aria-expanded", "true");
+            }
+        });
+    });
 
 
-                    if (!target) return;
+    /* =====================================================
+       5. SMOOTH ANCHOR SCROLLING
+    ===================================================== */
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
 
-
-                    event.preventDefault();
-
-
-                    target.scrollIntoView({
-                        behavior:
-                            reducedMotion
-                                ? "auto"
-                                : "smooth",
+    smoothLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            const targetId = link.getAttribute("href");
+            if (targetId && targetId.length > 1) {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: "smooth",
                         block: "start"
                     });
-
                 }
-            );
-
+            }
         });
+    });
 
 
     /* =====================================================
-       ESCAPE — RESET MODALITY
+       6. CLINICAL CONSOLE HUD MARKER INTERACTION
     ===================================================== */
+    const hudMarkers = document.querySelectorAll(".hud-marker");
+    const telemetryStrength = document.querySelector(".console-telemetry-bar strong");
 
-    document.addEventListener(
-        "keydown",
-        event => {
+    hudMarkers.forEach(marker => {
+        marker.addEventListener("mouseenter", () => {
+            const label = marker.querySelector(".marker-label");
+            if (label && telemetryStrength) {
+                marker.style.transform = "scale(1.15)";
+            }
+        });
 
-            if (event.key !== "Escape") return;
-
-            selectModality("mri");
-
-        }
-    );
+        marker.addEventListener("mouseleave", () => {
+            marker.style.transform = "";
+        });
+    });
 
 });
