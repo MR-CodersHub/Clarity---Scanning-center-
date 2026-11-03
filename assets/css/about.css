@@ -2739,4 +2739,68 @@ html:not(.js) .about-reveal-right {
     }
 }
 
+/* =========================================================
+   DARK THEME REFINEMENTS
+========================================================= */
+body.dark-theme .mission-card {
+    background: #102833;
+    border-color: #234755;
+}
+
+body.dark-theme .mission-card.featured {
+    background: #143847;
+    border-color: #4ed9e5;
+    color: #ffffff;
+}
+
+body.dark-theme .mission-card.featured .card-label {
+    color: #4ed9e5;
+}
+
+body.dark-theme .mission-card.featured .mission-icon {
+    background: rgba(78, 217, 229, 0.16);
+    color: #4ed9e5;
+}
+
+body.dark-theme .mission-card.featured h3 {
+    color: #ffffff;
+}
+
+body.dark-theme .mission-card.featured p {
+    color: #b4cbd5;
+}
+
+body.dark-theme .expertise-card,
+body.dark-theme .value-card,
+body.dark-theme .team-card {
+    background: #102833;
+    border-color: #234755;
+}
+
+body.dark-theme .expertise-card h3,
+body.dark-theme .value-card h3,
+body.dark-theme .team-card h3 {
+    color: #ffffff;
+}
+
+body.dark-theme .expertise-card p,
+body.dark-theme .value-card p,
+body.dark-theme .team-card p {
+    color: #b4cbd5;
+}
+
+body.dark-theme .expertise-icon,
+body.dark-theme .value-icon {
+    background: rgba(78, 217, 229, 0.14);
+    color: #4ed9e5;
+}
+
+body.dark-theme .about-stats-section {
+    background: #081a23;
+}
+
+body.dark-theme .about-faq-section {
+    background: #081a23;
+}
+
 

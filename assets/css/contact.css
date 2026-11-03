@@ -377,6 +377,15 @@ body.dark-theme .hero-contact-card {
 .section-heading {
     max-width: 700px;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-heading .eyebrow {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -386,6 +395,7 @@ body.dark-theme .hero-contact-card {
     font-size: clamp(34px, 4vw, 50px);
     line-height: 1.1;
     letter-spacing: -0.04em;
+    text-align: center;
 }
 
 
@@ -393,6 +403,9 @@ body.dark-theme .hero-contact-card {
     margin-top: 16px;
     color: var(--text-light);
     font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 
@@ -958,30 +971,32 @@ body.dark-theme .map-overlay-card {
 }
 
 .contact-faq .section-heading {
-    text-align: left;
-    margin-left: 0;
+    text-align: center;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
 }
 
 .contact-faq .section-heading .eyebrow {
-    justify-content: flex-start;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-faq .section-heading h2 {
-    text-align: left;
+    text-align: center;
 }
 
 .contact-faq .section-heading p {
-    text-align: left;
-    margin-left: 0;
+    text-align: center;
+    margin-left: auto;
     margin-right: auto;
 }
 
 .contact-faq .faq-list {
     max-width: 900px;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
     text-align: left;
 }

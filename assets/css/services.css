@@ -850,12 +850,15 @@ body.dark-theme .console-floating-badge {
 
 .matrix-heading {
     max-width: 740px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
+    text-align: center;
 }
 
 .matrix-heading .eyebrow {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     gap: 7px;
     color: var(--primary);
     font-size: 11px;
@@ -870,6 +873,7 @@ body.dark-theme .console-floating-badge {
     line-height: 1.15;
     letter-spacing: -0.03em;
     color: var(--text);
+    text-align: center;
 }
 
 .matrix-heading h2 span {
@@ -881,6 +885,9 @@ body.dark-theme .console-floating-badge {
     color: var(--text-light);
     font-size: 16px;
     line-height: 1.75;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .matrix-layout {
@@ -1956,4 +1963,43 @@ html[dir="rtl"] .cta-phone:hover {
         width: 100%;
         justify-content: center;
     }
+}
+
+/* =========================================================
+   DARK THEME REFINEMENTS
+========================================================= */
+body.dark-theme .services-catalog-card {
+    background: #102833;
+    border-color: #234755;
+}
+
+body.dark-theme .filter-pill.active {
+    background: #087f8c;
+    color: #ffffff;
+    border-color: #4ed9e5;
+}
+
+body.dark-theme .matrix-panel {
+    background: #102833;
+    border-color: #234755;
+}
+
+body.dark-theme .matrix-tab-btn {
+    background: #102833;
+    border-color: #234755;
+}
+
+body.dark-theme .matrix-tab-btn.active {
+    background: #143847;
+    border-color: #4ed9e5;
+}
+
+body.dark-theme .standard-card {
+    background: #102833;
+    border-color: #234755;
+}
+
+body.dark-theme .prep-cta-box {
+    background: #102833;
+    border-color: #234755;
 }
